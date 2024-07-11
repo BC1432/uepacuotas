@@ -1433,7 +1433,7 @@
             display: none;
         }
         #signUpForm input {
-            padding: 12px 12px;
+            padding: 12px 9px;
             width: 100%;
             font-size: 1em;
             border: 1px solid #e3e3e3;
@@ -2678,7 +2678,8 @@
 
                         <div class="text-center my-4">
                             <img src="/images/sms-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
-                            <small style="font-size: 12px;" class="small mb-4">Ingresa el código</small>
+                            <p style="font-size: 12px;" class="small mb-3">Ingresa el código</p>
+                            <p style="font-size: 10px;" class="small mb-3">Digita el código de 4 dígitos que te hemos enviado vía SMS</p>
                         </div>
                     
                         <div class="row mb-3">
@@ -2743,11 +2744,25 @@
                      <!-- step 4 -->
                      <div class="step">
                         <h1>4</h1>
+                        <div class="text-center my-4">
+                            <img src="/images/card-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
+                            <small style="font-size: 12px;" class="small mb-4">Completa y verifica tus datos</small>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control bg-light" type="text" placeholder="..." value="" oninput="this.className = ''" name="">
+                        </div>
                     </div>
 
                      <!-- step 5 -->
                      <div class="step">
                         <h1>5</h1>
+                        <div class="text-center my-4">
+                            <img src="/images/card-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
+                            <small style="font-size: 12px;" class="small mb-4">Completa y verifica tus datos</small>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control bg-light" type="text" placeholder="..." value="" oninput="this.className = ''" name="">
+                        </div>
                      </div>
            
                 </form>
@@ -2773,6 +2788,7 @@
     </div>
 
     <script>
+        // STEPS para OTP new
         let currentTab = 0; // Current tab is set to be the first tab (0)
         showTab(currentTab); // Display the current tab
         
