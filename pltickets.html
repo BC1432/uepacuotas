@@ -1,0 +1,2878 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+    <title>
+        Realizar Pago | Uepa Pay
+    </title>
+
+    <link rel="manifest" href="/manifest.json?ver=0.0.8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Uepa Pay">
+    <meta name="apple-mobile-web-app-title" content="Uepa Pay">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="msapplication-navbutton-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="boleteria, ticket, uepatickets, uepaticket, tickets, boletas, entradas, uepa, santiago, lidom, newspaper, periodicos, santo domingo, republica dominicana," name="keywords">
+    <meta content="Uepa Pay" name="abstract"><meta content="global" name="distribution">
+    <meta content="Copyright© UepaPay.com, Todos los derechos reservados. 2018" name="copyright">
+    <meta content="UepaTickets" name="author"><meta content="index,follow" name="robots">
+    <meta content="index,follow" name="googlebot">
+
+    <!-- Google -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap" rel="stylesheet">
+    
+    <!-- Fonts icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><meta content="Pagos en Línea" name="description"><meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Uepa Pay"><meta property="og:site_name" content="Uepa Pay"><meta property="og:description" content="Pagos en Línea"><meta property="og:image" content="/images/1200x630.png"><meta property="og:url" content="https://uepapay.com/">
+
+    <!-- Facebook App -->
+    <meta property="fb:app_id" content="1142952769075359">
+    <!-- Angel Rivas -->
+    <meta property="fb:admins" content="707892288">
+    <!-- Fanpage -->
+    <meta property="fb:admins" content="21003923568"><link href="/css/main.css" rel="stylesheet"><link rel="icon" type="image/png" href="/images/512.png"><link rel="shortcut icon" href="/images/512.png">
+    <!--<link rel="apple-touch-icon" href="/images/128.png" /><link rel="apple-touch-icon" sizes="72x72" href="/images/128.png" /><link rel="apple-touch-icon" sizes="144x144" href="/images/128.png" />-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/256.png"><link rel="icon" sizes="192x192" href="/images/512.png">
+
+    <!--<link rel="stylesheet" href="/css/angel.css?ver=0.0.5" />-->
+    <script src="/js/5.3.2/popper.min.js"></script><style></style>
+    <link rel="stylesheet" href="/css/5.3.2/bootstrap.min.css?ver=5.3.2"><link rel="stylesheet" href="/css/5.3.2/jquery-ui.min.css?ver=3.0">
+
+    <style>
+        /***** Custom by Angel Rivas ****/
+        :root {
+            --bg-pink-light: #F3E0FC !important;
+            --bg-orange-light: #feeae4 !important;
+            --bg-purple-light: #decee3 !important;
+            --bg-gray-light: #e5e8ea !important;
+        }
+
+        h5, .h5 {
+            font-size: 1.09rem;
+        }
+
+        html {
+            background: var(--bg-orange-light) !important;
+        }
+
+        body {
+            background: var(--bg-orange-light) !important;
+        }
+
+        form {
+            background: var(--bg-orange-light) !important;
+        }
+
+        .blur {
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+        }
+
+        .ajs-modal {
+            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+        }
+
+        #lbVolver {
+            margin-top: 9px;
+        }
+
+        .rounded-xxl {
+            border-radius: 1rem !important;
+        }
+
+        svg.btn-share {
+            width: 50px;
+            height: 50px;
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .btn-success {
+            color: #fff !important;
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .red {
+            color: #ee522c;
+            fill: #ee522c;
+        }
+
+        .gold {
+            color: #c4802e;
+            fill: #c4802e;
+        }
+
+        .yellow {
+            color: #fee66f;
+            fill: #fee66f;
+        }
+
+        .shadow-success {
+            box-shadow: 0 .5rem 1rem rgba(40,167,69,.25) !important;
+        }
+
+        .shadow-warning {
+            box-shadow: 0 .5rem 1rem rgba(254,193,6,.25) !important;
+        }
+
+        .cuotas-primary {
+            color: #20003d
+        }
+
+        .btn-cuotas {
+            color: #eee;
+            background-color: #5f0f78;
+            border-color: #5f0f78 !important;
+            transition: .2s
+        }
+
+            .btn-cuotas:hover {
+                color: #fff;
+                background-color: #000;
+                border-color: #000 !important;
+                transition: .2s
+            }
+
+            .btn-cuotas:focus {
+                color: #fff;
+                background-color: #000;
+                border-color: #000 !important;
+                transition: .2s
+            }
+
+        .material-switch > input[type="checkbox"]:checked + label::after {
+            background: inherit;
+            left: 20px;
+            background: #198754 !important;
+        }
+
+      
+
+    </style>
+
+    <script type="text/javascript" src="/static/asset/js/jquery-1.12.2.min.js?ver=1.0.0" gapi_processed="true"></script>
+    <script type="text/javascript" src="/Script/jquery-ui.min.js?ver=1.0.0"></script>
+    <link href="static/alertifyjs/css/alertify.min.css?ver=1.0.0" rel="stylesheet">
+    <link href="static/alertifyjs/css/themes/default.min.css?ver=1.0.0" rel="stylesheet">
+    <script type="text/javascript" src="/static/alertifyjs/alertify.min.js?ver=1.0.0"></script>
+    <script src="js/main.js"></script>
+
+    <link href="css/angel.css" rel="stylesheet">
+    <link href="css/5.3.2/bootstrap.min.css" rel="stylesheet">
+    <link href="css/5.3.2/jquery-ui.min.css" rel="stylesheet">
+    <link href="static/alertifyjs/css/alertify.min.css?ver=1.0.0" rel="stylesheet">
+    <link href="static/alertifyjs/css/themes/default.min.css?ver=1.0.0" rel="stylesheet">
+
+    <script src="js/5.3.2/bootstrap.js"></script>
+    <script src="js/5.3.2/popper.min.js"></script>
+    <script src="static/alertifyjs/alertify.min.js"></script>
+
+    <script type="text/javascript" src="/js/5.3.2/jquery-3.7.1.min.js?ver=1.0.0"></script>
+    <script type="text/javascript" src="/js/5.3.2/jquery-ui.min.js?ver=1.13.2"></script>
+    <script type="text/javascript" src="/static/asset/js/TweenMax.min.js?ver=1.0.0"></script>
+    <script type="text/javascript" src="/static/asset/bower_components/owlcarousel/owl-carousel/owl.carousel.min.js?ver=1.0.0"></script>
+    <script type="text/javascript" src="static/alertifyjs/alertify.min.js?ver=1.0.0"></script>
+    <script type="text/javascript" src="/static/alertifyjs/alertify.min.js?ver=1.0.0"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        var pl = '';
+
+        const formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            maximumFractionDigits: 0,
+            minimumFractionDigits: 0,
+        });
+        const formatter2 = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD'
+        });
+
+        function setHeartbeat() {
+            setTimeout("heartbeat()", 30 * 1000); // every 30 segs
+        }
+
+        function heartbeat() {
+
+            $.ajax({
+                type: "POST",
+                data: null,
+                url: "pltickets.aspx/SessionHeartbeat",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (resp) {
+                    setHeartbeat();
+                    console.log(resp);
+                }
+            });
+
+        }
+
+        setHeartbeat();
+
+        $(document).ready(function () {
+
+            //recuperar pass 
+            $("#btnConfirmarRecuperarPass").on('click', function () {
+                $("#mensajeRecuperarPass").text("");
+                var tb_email_recuperar_pass = $("#tb_email_recuperar_pass");
+
+                if (tb_email_recuperar_pass.val().length == 0) {
+                    return;
+                }
+
+                var jData = jData = JSON.stringify({
+                    'email': tb_email_recuperar_pass.val()
+                });
+
+                $.ajax({
+                    type: "POST",
+                    data: jData,
+                    url: "pltickets.aspx/RecuperarPass",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+                        //
+                        //console.log(resp.d[0]);
+                        $("#mensajeRecuperarPass").text(resp.d[1]);
+                        if (resp.d[0] == "1") {
+                            tb_email_recuperar_pass.val("");
+                        }
+
+                    }
+                });
+            });
+
+            //otp 
+            $("#btnConfirmarOTP_express").on('click', function () {
+                $("#mensajeOTP").text("");
+                var otp_registro = $("#otp_registro");
+                var correo_registro = $("#correo_registro");
+
+                var jData = jData = JSON.stringify({
+                    'token': otp_registro.val(),
+                    'email': correo_registro.val()
+                });
+                $.ajax({
+                    type: "POST",
+                    data: jData,
+                    url: "pltickets.aspx/ConfirmOTP",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+
+                        //console.log(resp);
+
+                        if (resp.d[0] == "1") {
+                            $("#otp-modal .btn-close").click();
+
+                            /*buscarTarjetasRegistradas();*/
+
+                            //reload page
+                            location.reload();
+                        }
+                        else {
+                            $("#mensajeOTP").text(resp.d[1]);
+                        }
+
+                    }
+                });
+            });
+
+            //registro express
+            $("#btnRegistrarse_express").on('click', function () {
+                $("#mensajeGuardarRegistro").text("");
+                var nombre_registro = $("#nombre_registro");
+                var apelllido_registro = $("#apelllido_registro");
+                var correo_registro = $("#correo_registro");
+                var contrasena_registro = $("#contrasena_registro");
+                var tel_registro = $("#tel_registro");
+
+                var jData = jData = JSON.stringify({
+                    'nombre': nombre_registro.val(),
+                    'apellido': apelllido_registro.val(),
+                    'celular': tel_registro.val(),
+                    'email': correo_registro.val(),
+                    'password': contrasena_registro.val()
+                });
+                $.ajax({
+                    type: "POST",
+                    data: jData,
+                    url: "pltickets.aspx/RegisterExpress",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+
+                        //console.log(resp);
+
+                        if (resp.d[0] == "1") {
+                            $("#registro-modal .btn-close").click();
+
+                            //OTP
+                            $("#otp-modal").modal('show');
+
+                            //buscarTarjetasRegistradas();
+                        }
+                        else {
+                            $("#mensajeGuardarRegistro").text(resp.d[1]);
+                        }
+
+                    }
+                });
+            });
+
+            //save  card express
+            $("#btnGuardarTC_express").on('click', function () {
+                $("#mensajeGuardarTC").text("");
+                var txtCreditCardOwner_express = $("#txtCreditCardOwner_express");
+                var txtCreditCard_express = $("#txtCreditCard_express");
+                var txtFhExpiration_express = $("#txtFhExpiration_express");
+                var txCardKey_express = $("#txCardKey_express");
+
+                var jData = jData = JSON.stringify({
+                    'cardOwner': txtCreditCardOwner_express.val(),
+                    'card': txtCreditCard_express.val(),
+                    'cardDateExpired': txtFhExpiration_express.val(),
+                    'cardKey': txCardKey_express.val()
+                });
+                $.ajax({
+                    type: "POST",
+                    data: jData,
+                    url: "pltickets.aspx/AddVaultExpress",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+
+                        //console.log(resp);
+
+                        if (resp.d[0] == "1") {
+                            $("#create-card-modal .btn-close").click();
+
+                            txtCreditCardOwner_express.val("");
+                            txtCreditCard_express.val("");
+                            txtFhExpiration_express.val("");
+                            txCardKey_express.val("");
+
+                            buscarTarjetasRegistradas();
+                        }
+                        else {
+                            $("#mensajeGuardarTC").text(resp.d[1]);
+                        }
+
+                    }
+                });
+            });
+
+
+            $("#tabTarjetas").on("click", function () {
+                $("#BillingOptRadio1").click();
+            });
+            $("#tab2default").on("click", function () {
+                $("#BillingOptRadio2").click();
+            });
+
+            //
+
+
+            $("#btnprocesarpago3DS").on('click', function () {
+                $("#btnprocesarpago").click();
+            });
+
+
+            $('#card_expiry_date').on('focus click', function () {
+                $(this)[0].setSelectionRange(0, 0);
+            });
+
+            //btnLogin
+            $("#btnLogin").on('click', function () {
+                $("#mensajeLogin").text("");
+                var user = $("#txtUsuario").val();
+                var pass = $("#txtPassword").val();
+                var jData = jData = JSON.stringify({
+                    'user': user,
+                    'pass': pass
+                });
+                $.ajax({
+                    type: "POST",
+                    data: jData,
+                    async: false,
+                    url: "pltickets.aspx/Login_Click",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+                        //console.log(resp.d);
+                        if (resp.d == "1") {
+                            if (location.toString().includes("session=")) {
+                                location.replace(location.toString().replace("session=0", "session=1"));
+                                //iniciar proceso cuotas
+                                setTimeout(function () { validateUepaCuotas() }, 4000);
+                                //validateUepaCuotas();
+                            }
+                            else {
+                                location.replace(location.toString() + "&session=1");
+                                setTimeout(function () { validateUepaCuotas() }, 4000);
+                                //validateUepaCuotas();
+                            }
+
+                        }
+                        else {
+                            var mensaje = resp.d.toString().substr(1);
+                            //console.log(mensaje);
+                            $("#mensajeLogin").text(mensaje);
+                        }
+
+                    }
+                });
+            });
+
+            $("#btnLogin2").on('click', function () {
+                $("#mensajeLogin2").text("");
+                var user = $("#txtUsuario2").val();
+                var pass = $("#txtPassword2").val();
+                var jData = jData = JSON.stringify({
+                    'user': user,
+                    'pass': pass
+                });
+                $.ajax({
+                    type: "POST",
+                    data: jData,
+                    async: false,
+                    url: "pltickets.aspx/Login_Click",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+                        //console.log(resp.d);
+                        if (resp.d == "1") {
+                            if (location.toString().includes("session=")) {
+                                location.replace(location.toString().replace("session=0", "session=2"));
+                            }
+                            else {
+                                location.replace(location.toString() + "&session=2");
+                            }
+
+                        }
+                        else {
+                            var mensaje = resp.d.toString().substr(1);
+                            //console.log(mensaje);
+                            $("#mensajeLogin2").text(mensaje);
+                        }
+
+                    }
+                });
+            });
+
+            $("#btnCerrarSession").on('click', function () {
+                $.ajax({
+                    type: "POST",
+                    data: null,
+                    async: false,
+                    url: "pltickets.aspx/CloseSession",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+                        location.replace(location.toString().replace("session=1", "session=0"));
+                    }
+                });
+            });
+
+            $("#btnCerrarSession2").on('click', function () {
+                $.ajax({
+                    type: "POST",
+                    data: null,
+                    async: false,
+                    url: "pltickets.aspx/CloseSession",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+                        location.replace(location.toString().replace("session=2", "session=0"));
+                    }
+                });
+            });
+
+
+            $("#BillingOptRadio1").on('change', function () {
+
+                if (document.getElementById('BillingOptRadio1').checked) {
+                    $("input[name^='tarjetaUsuario']").attr('checked', false);
+                    $("#tabTarjetas").removeClass("d-none hidden");
+
+                }
+                else {
+                    $("#tabTarjetas").addClass("d-none hidden");
+                }
+
+            });
+
+            validateUepaCuotas();
+
+            //$("#BillingOptRadio2").click();
+
+
+            $("#BillingOptRadio2").on('change', function () {
+
+
+                $("#btnCerrarSession").addClass("d-none hidden");
+
+                var userSession = CheckSession();
+
+                if (userSession == 1) {
+                    buscarTarjetasRegistradas();
+                    $("#tab2default").removeClass("d-none hidden");
+                    $("#btnCerrarSession").removeClass("d-none hidden");
+
+                }
+                else {
+                    $("#tabLogin").removeClass("d-none hidden");
+                }
+
+            });
+
+            $("#BillingOptRadio4").on('change', function () {
+
+                var userSession = CheckSession();
+
+                if (userSession == 1) {
+                    buscarTarjetasRegistradas();
+                    $("#tab4default").removeClass("d-none hidden");
+                }
+                else {
+                    $("#tabLogin2").removeClass("d-none hidden");
+                }
+
+            });
+
+            function CheckSession() {
+                var haveSession = 0;
+                let userName = "";
+                let userEmail = "";
+                $('#mensajeUsuario').html("");
+
+                $.ajax({
+                    type: "POST",
+                    data: null,
+                    async: false,
+                    url: "pltickets.aspx/CheckSession",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+                        haveSession = parseInt(resp.d);
+                    }
+                });
+
+                if (haveSession === 1) {
+                    $("#deseoAplicar").show();
+                    $("#deseoAplicar").removeClass("d-none");
+
+                    $('#proccesTransmmit111').show();
+                    $('#proccesTransmmit111').removeClass('d-none');
+                    //
+                    $('#btnprocesarpago').show();
+                    $('#btnprocesarpago').removeClass('d-none');
+                }
+
+                if (haveSession === 0) {
+                    $.ajax({
+                        type: "POST",
+                        data: null,
+                        url: "pltickets.aspx/GetUserData",
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8",
+                        success: function (resp) {
+                            if (resp.d != null && resp.d.length > 0) {
+                                userName = resp.d[0].Comprador.Nombre;
+                                userEmail = resp.d[0].Carrito.EmailComprador;
+
+                                $('#mensajeUsuario').html("<p class='h5 text-primary mb-2'>¡Hola " + userName + "!</p><p>Inicia sesión para pagar tu compra</p>");
+
+                                if (resp.d[0].Comprador.UsuarioExiste === 1) {
+                                    $("#txtUsuario").val(userEmail);
+                                    //$("#btnLogin").click();
+                                }
+                                else {
+                                    //completar datos del registro
+                                    $("#nombre_registro").val(resp.d[0].Comprador.Nombre);
+                                    $("#apelllido_registro").val(resp.d[0].Comprador.Apellidos);
+                                    $("#correo_registro").val(resp.d[0].Carrito.EmailComprador);
+                                    $("#tel_registro").val(resp.d[0].Comprador.Telefono);
+
+                                    $('#registro-modal').modal('show');
+                                }
+
+                            }
+                        }
+                    });
+                }
+
+                return haveSession;
+            }
+
+            function buscarTarjetasRegistradas() {
+                $('#mensajeUsuario').html("");
+
+                $("#proccesTransmmit111").addClass("disabled");
+                $("#btnprocesarpago").addClass("disabled");
+                $("#deseoAplicar").addClass("disabled");
+
+                $.ajax({
+                    type: "POST",
+                    data: null,
+                    url: "pltickets.aspx/GetUserVaults",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+                        var checked = "checked";
+                        $("#card-list").remove();
+                        if (resp.d != null && resp.d.length > 0) {
+                            //$('#vaults').append('<ul>');
+                            var list = document.createElement("div");
+                            list.id = "card-list";
+                            $(list).addClass('list-group text-left');
+                            $(resp.d).each(function (index, values) {
+                                var Item = document.createElement("label");
+                                $(Item).addClass('list-group-item list-group-item-action');
+                                var radioButton = $('<input class="form-check-input" type="radio" id="tarjetaUsuario" name="tarjetaUsuario" value="' + this.UserVaultId + '" ' + checked + '/>');
+                                var CardNomesclature = $('<span class="text-primary card-numbers">' + this.Card + '</span>')
+                                var image = $('<img class="card-icon mb-1"/>');
+                                var inputCvv = $(`<input type="text" maxlength="4" placeholder="Ingresar CVV" autocomplete="off"  id="ContentPlaceHolder1_CVV" class="form-control float-end w-50" />`)
+                                radioButton.appendTo(Item);
+                                radioButton.on("change", function (e) {
+                                    $("#ContentPlaceHolder1_CVV").val("");
+                                    $("#ContentPlaceHolder1_CVV").remove();
+                                    inputCvv.appendTo(Item);
+                                });
+                                image.appendTo(Item);
+                                CardNomesclature.appendTo(Item);
+                                if (index === 0) {
+                                    inputCvv.appendTo(Item);
+                                }
+                                $(Item).appendTo(list);
+
+                                //$('#vaults').append('<li>');
+                                //$('#vaults').append('<input type="radio" name="tarjetaUsuario" value="'+this.UserVaultId+'" '+checked+'/> '+this.Card);
+                                //$('#vaults').append('</li>');
+                                checked = "";
+                            });
+                            $(list).appendTo('#vaults');
+                            buscarNumeroTarjetasDefault();
+
+                            $("#proccesTransmmit111").removeClass("disabled");
+                            $("#btnprocesarpago").removeClass("disabled");
+                            $("#deseoAplicar").removeClass("disabled");
+
+                            $('#mensajeUsuario').html("<a class='btn btn-outline-secondary w-100 btn-add-vault000' data-bs-toggle='modal' data-bs-target='#create-card-modal'><span>+ Agregar tarjeta</span></a>");
+                        }
+                        else {
+                            $('#mensajeUsuario').html("<p>Registra una tarjeta para continuar</p><a class='btn btn-outline-secondary w-100 btn-add-vault000' data-bs-toggle='modal' data-bs-target='#create-card-modal'><span>+ Agregar tarjeta</span></a>");
+                        }
+
+                        //else {
+                        //    $('#liBPDPayment').hide();
+                        //    $('#liDefaultPayment').addClass('active');
+                        //    $('#liBPDPayment').removeClass('active');
+                        //    $('#tab1default').show()
+                        //    $('#tab2default').hide()
+
+                        //}
+                    },
+                    error: function (resp) {
+                        alertify.warning($("#hd0").val());
+                    }
+                });
+            }
+
+
+
+            function EnviarTarjeta(methodNotificationStatus = "") {
+
+                removeParam("ResC");
+
+                //alertify.alert($("#hd2").val()).set('basic', true);
+                var notify = alertify.alert($("#hd2").val()).set('basic', true).set('closable', false);
+
+                $("#btnprocesarpago").attr('disabled', 'disabled');
+
+                var BrowserJavaScriptEnabled = $("#BrowserJavaScriptEnabled").val();
+                var BrowserTimeZone = $("#BrowserTimeZone").val();
+                var BrowserLanguage = $("#BrowserLanguage").val();
+                var BrowserColorDepth = $("#BrowserColorDepth").val();
+                var BrowserScreenWidth = $("#BrowserScreenWidth").val();
+                var BrowserScreenHeight = $("#BrowserScreenHeight").val();
+
+                setTimeout(() => {
+
+
+                    console.log("Loading...");
+
+
+                    if ($('#BillingOptRadioPopular').is(':checked')) {
+                        //alert('boton popular' + pl);
+                        window.location.href = "../LoginPopular.aspx?orderpl=" + pl;
+                    }
+                    else {
+                        var cc = $("#card_number");
+                        var fe = $("#card_expiry_date");
+                        var cvv = $("#ContentPlaceHolder1_CVV")//ContentPlaceHolder1_CVV$("#card_cvv");
+                        var email = $("#email_txt");
+                        var nombre = $("#nombre_txt");
+                        var apellido = $("#apellido_txt");
+                        var tel = $("#tel_txt");
+                        var guestToRegister = $("#guestToRegister");
+
+
+                        var vaultId = "";
+                        if ($('#BillingOptRadio2').is(':checked')) {
+                            vaultId = $($('input[name="tarjetaUsuario"]:checked')[0]).val();
+                        }
+
+                        var guiiid = "";
+
+                        var html = $("#dformulariopago").html();
+
+                        var jData = jData = JSON.stringify({
+                            'creditCard': cc.val(),
+                            'fechExp': fe.val(),
+                            'cvv': cvv.val(),
+                            'html': html,
+                            'userVaultId': vaultId,
+                            'email': email.val(),
+                            'nombre_txt': nombre.val(),
+                            'apellido_txt': apellido.val(),
+                            'tel_txt': tel.val(),
+                            'guestToRegister': guestToRegister.is(':checked').toString(),
+                            'methodNotificationStatus': methodNotificationStatus,
+                            'BrowserJavaScriptEnabled': BrowserJavaScriptEnabled,
+                            'BrowserTimeZone': BrowserTimeZone,
+                            'BrowserLanguage': BrowserLanguage,
+                            'BrowserColorDepth': BrowserColorDepth,
+                            'BrowserScreenWidth': BrowserScreenWidth,
+                            'BrowserScreenHeight': BrowserScreenHeight
+                        });
+
+
+                        $.ajax({
+                            type: "POST",
+                            url: "pltickets.aspx/ProcesarPago",
+                            data: jData,
+                            dataType: "json",
+                            contentType: "application/json; charset=utf-8",
+                            success: function (resp) {
+
+                                alertify.closeAll();
+                                var notify = alertify.alert($("#hd2").val()).set('basic', true).set('closable', false);
+
+                                var _respArray = resp.d.toString().split(",");
+                                var _fields = resp.d.toString().split("|");
+
+                                if (_respArray[0] != null && _respArray[0] == "9" && methodNotificationStatus == "") {
+
+                                    //console.log($("#tdsMmethodForm").html());
+                                    //$("input[name=3DSMethodData]").val(_fields[0].substr(2));
+                                    //$("input[name=threeDSMethodData]").val(_fields[1].substr(0));
+                                    //console.log($("#tdsMmethodForm").html());
+                                    //document.getElementById('tdsMmethodForm').submit();
+                                    //$("#tdsMmethodForm").submit();
+                                    //console.log(resp.d.toString().substr(2));
+                                    $("body").append(resp.d.toString().substr(2));
+
+                                    setTimeout(EnviarTarjeta("EXPECTED_BUT_NOT_RECEIVED"), 15000)
+
+                                    return;
+                                }
+
+                                if (_respArray[0] != null && _respArray[0] == "3DS|") {
+
+                                    var _fields = resp.d.toString().split("|");
+                                    var frmAction = _fields[3];
+                                    var paReq = _fields[2]
+                                    var mD = _fields[1].substring(1);
+                                    var termUrl = _fields[4];
+
+
+                                    $("form#fmr3DS").attr('action', frmAction);
+                                    $('input[name="PaReq"]').val(paReq);
+                                    $('input[name="MD"]').val(mD);
+                                    $('input[name="TermUrl"]').val(termUrl);
+
+
+                                    $('form#fmr3DS').submit();
+
+                                    return;
+
+                                }
+
+                                if (_respArray[0] != null && _respArray[0] == "3DS2|") {
+
+                                    //console.log("3ds2");
+                                    //console.log("resp.d" + resp.d.toString());
+                                    //console.log("resp.d.toString().split" + resp.d.toString().split("|"));
+
+                                    var _fields = resp.d.toString().split("|");
+                                    //console.log(_fields[0]);
+                                    //console.log(_fields[1]);
+                                    //console.log(_fields[2]);
+                                    //console.log(_fields[3]);
+
+                                    var creq = _fields[1].substring(1);
+                                    var redirectoToPost = _fields[2];//igual q redirectopost???
+                                    var termUrl = _fields[3];
+                                    termUrl = termUrl.toString();//.replace("&amp;", "&");
+                                    //console.log("creq:" + creq);
+                                    //console.log("redirectoToPost:" + redirectoToPost);
+                                    //console.log("termUrl:" + termUrl);
+
+
+                                    $("form#fmr3DS2").attr('action', redirectoToPost);
+                                    $('input[name="creq"]').val(creq);
+                                    $('input[name="TermUrl"]').val(termUrl);
+                                    $('form#fmr3DS2').submit();
+
+                                    return;
+
+                                }
+
+                                if (_respArray[0] != null && (_respArray[0] == "1" || _respArray[0] == "2")) {
+
+                                    //alertify.success($("#hd3").val());
+
+                                    //$("#confirmaciondeorden").append(resp.d.toString().substr(2));
+
+                                    //$("#gvRevisionOrden").html("");
+
+                                    //$("#step-2 input").val("");
+
+                                    //$("#ContentPlaceHolder1_lblCargoPorServicio").html("");
+                                    //$("#lblSubTotal").html("");
+                                    //$("#ContentPlaceHolder1_lblGranTotal").html("");
+
+                                    //window.location.href = location.href.replace("#step-2", "#step-3");
+
+
+                                    if (_respArray[0] == "2") {
+                                        window.location.href = _respArray[1];
+                                        return;
+                                    }
+                                    if (_respArray[0] == "1") {
+                                        window.location.href = "../PaymentCompleted.aspx"
+                                        return;
+                                    }
+
+
+                                }
+                                else {
+                                    var error = resp.d.toString().substr(2);
+
+                                    if (_respArray[0] == "X") {
+                                        alertify.alert(error, function () {
+                                            //window.location.href = "../LoginUepa.aspx";
+                                        }).set('basic', false).set('closable', true);
+
+                                    }
+
+                                    if (_respArray[0] == "Y") {
+                                        alertify.alert(error).set('basic', false).set('closable', true);
+
+                                    }
+                                    else {
+                                        alertify.alert($("#hd4").val() + error).set('closable', true);
+                                    }
+                                }
+
+                                $("#btnprocesarpago").removeAttr('disabled');
+                            },
+                            error: function (resp) {
+                                //console.log(resp);
+                                alertify.closeAll();
+                                $("#btnprocesarpago").removeAttr('disabled');
+
+                                alertify.warning($("#hd0").val());
+                            }
+                        });
+                    }
+
+                }, 5000);
+            }
+
+            $("#btnprocesarpago").on('click', function () {
+
+                //reset cuotas
+                $.ajax({
+                    type: "POST",
+                    url: "pltickets.aspx/ResetCuotas",
+                    data: null,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (resp) {
+                    }
+                });
+
+                EnviarTarjeta("");
+
+            });
+
+
+
+            function removeParam(key) {
+                var uri = window.location.toString();
+                if (uri.indexOf("&ResC") > 0) {
+                    var clean_uri = uri.substring(0, uri.indexOf("&ResC"));
+                    window.history.replaceState({}, document.title, clean_uri);
+                }
+            }
+
+
+            if (getUrlParameter("session") == "1") {
+                $('#BillingOptRadio2').click();
+            }
+
+            else if (getUrlParameter("session") == "2") {
+                $('#BillingOptRadio4').click();
+            }
+
+            function getUrlParameter(name) {
+                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                var results = regex.exec(location.search);
+                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+            }
+
+            console.log("ready!");
+
+            function toggleByName(nombre) {
+                $('tr[name*="' + nombre + '"]').toggle();
+            }
+
+
+
+            $("#theme_selector").change();
+
+            $('#uepaCuota').prop('disabled', true);
+
+            // validateUepaCuotas();
+
+            $('#checkUepaCuota').on('change', function (e) {
+                e.preventDefault();
+                let isTermsChecked = e.target.checked;
+                if (isTermsChecked) {
+                    $('#uepaCuota').prop('disabled', false);
+                } else {
+                    $('#uepaCuota').prop('disabled', true);
+                }
+            });
+
+            $("#tab2default").click();
+
+            function validateUepaCuotas() {
+
+                fetch(`pltickets.aspx/ValidateUepaQuoteApplication`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(response => {
+                    return response.json();
+                }).then(result => {
+                    let parsed = JSON.parse(result.d);
+                    //console.log(parsed.length);
+                    if (parsed.length > 0) {
+
+                        $('#validateUepaCuota').show();
+                        $('#validateUepaCuota').removeClass('d-none');
+
+                        //$('#proccesTransmmit000').show();
+                        //$('#proccesTransmmit000').removeClass('d-none');
+                        //
+                        //$('#proccesTransmmit111').show();
+                        //$('#proccesTransmmit111').removeClass('d-none');
+
+                        //
+                        $('#row_cuotas').show();
+                        $('#row_cuotas').removeClass('d-none');
+
+                        $('#sMensajeCuotas').show();
+                        $('#sMensajeCuotas').removeClass('d-none');
+
+                        $('#sMensajeCuotas').html("<small>" + parsed.length.toString() + " cuotas de:</small><div class='h5 text-primary'> RD" + formatter2.format(parsed[0].MontoPagar).toString() + "</div>");
+
+                        $("#proccesTransmmit111").text("Pagar en cuotas de RD" + formatter2.format(parsed[0].MontoPagar).toString());
+
+                        let tbTotal = $("#tbTotal");
+                        $("#btnprocesarpago").html("Pagar total de " + tbTotal.text());
+
+                        if (parsed[0].Mensaje !== '') {
+
+                            $('#validateUepaCuota').hide();
+                            $('#validateUepaCuota').addClass('d-none000');
+
+                            //$('#proccesTransmmit000').hide();
+                            //$('#proccesTransmmit000').addClass('d-none');
+
+                            $('#sMensajeCuotas').hide();
+                            $('#sMensajeCuotas').addClass('d-none000');
+
+                            $('#proccesTransmmit111').hide();
+                            $('#proccesTransmmit111').addClass('d-none000');
+
+                        }
+
+                        //if (Number(parsed[0].MontoPagar) <= 0) {
+                        //    $('#validateUepaCuota').hide();
+                        //}
+                        //else {
+                        //    $('#validateUepaCuota').show();
+                        //}
+                    }
+                    else {
+                        $('#validateUepaCuota').hide();
+                        $('#validateUepaCuota').addClass('d-none000');
+                        $('#proccesTransmmit111').hide();
+                        $('#proccesTransmmit111').addClass('d-none000');
+                    }
+                }).catch((error) => {
+                    $('#validateUepaCuota').hide();
+                    $('#validateUepaCuota').addClass('d-none000');
+                    $('#proccesTransmmit111').hide();
+                    $('#proccesTransmmit111').addClass('d-none000');
+                    //console.log(error)
+                });
+
+            }
+
+
+            const primerCuota = {
+                subtotal: 0,
+                cxs: 0,
+                grantotal: 0,
+                intereses: 0
+            };
+
+            const QUOTE_OPTIONS = {
+                2: '2do Pago',
+                3: '3er Pago',
+                4: '4to Pago',
+                5: '5to Pago',
+                6: '6to Pago'
+            };
+
+            $('#showUepaCuotas').on('click', function (e) {
+                e.preventDefault();
+
+                const table = $('#uepaCuotaTable2');
+                const body = table.find('tbody');
+                let content = '';
+                $('#montoPagar2').text(formatter2.format(0));
+                fetch('/pltickets.aspx/ShowUepaCuotas', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: null
+                }).then(response => {
+                    if (!response.ok) return "[{}]";
+                    return response.json();
+                }).then(data => {
+                    const result = JSON.parse(data.d);
+
+                    if (result.length <= 0) {
+                        body[0].innerHTML = `
+                <tr class="info">
+                    <td colspan='6'>
+                        <span style='font-size: 16px; text-align: center'>
+                            <strong>Debe procesar las cuotas para poder visualizarlas.</strong>
+                        </span>
+                    </td>
+                <tr>
+            `;
+                        return;
+                    }
+                    result.forEach((p, i) => {
+                        if (i === 0) {
+                            content = `<tr class="warning">
+                                <td class="" scope="row">${(i + 1)}er Pago</td>
+                                <td>Hoy</td>
+                                <td>${formatter.format(Math.trunc(p.SubTotal))}</td>
+                                <td>${formatter.format(Math.trunc(p.InteresMensual))}</td>
+                                <td>${formatter.format(Math.trunc(p.MontoPagar))}</td>
+																				  
+                            </tr>
+                    `;
+                            primerCuotaTemporal = Number(p.MontoPagar);// + p.CargoServicio);
+                        } else {
+                            let numeroCuota = (i + 1);
+                            let position = QUOTE_OPTIONS[numeroCuota];
+                            content += `
+                        <tr class="warning">
+                            <td class="" scope="row">${position}</td>
+                            <td>${p.PaymentDate.includes('T') ? p.PaymentDate.split('T')[0] : p.PaymentDate}</td>
+                            <td>${formatter.format(Math.trunc(p.SubTotal))}</td>
+                            <td>${formatter.format(Math.trunc(p.InteresMensual))}</td>
+										  
+                            <td>${formatter.format(Math.trunc(p.MontoPagar))}</td>
+                        </tr>
+                `;
+                        }
+                    });
+
+
+                    body[0].innerHTML = content;
+
+                    let totalPagar = 0;
+                    result.forEach(r => {
+                        totalPagar += Number(r.MontoPagar) ?? 0;
+                    });
+                    $('#montoPagar2').text(formatter2.format(totalPagar));
+                }).catch(console.table);
+
+            });
+
+            //pasoUnoCuotas
+            $('#volverAtras').on('click', function (e) {
+                e.preventDefault();
+                $('#pasoDosCuotas').removeClass("show").removeClass("active");
+                $('#pasoUnoCuotas').addClass("show").addClass("active")
+            });
+
+            //deseoAplicar
+            $('#deseoAplicar').on('click', function (e) {
+                e.preventDefault();
+
+                //tab-pane fade show active
+                $('#pasoUnoCuotas').removeClass("show").removeClass("active");
+                $('#pasoDosCuotas').addClass("show").addClass("active")
+
+                //$('#pasoDosCuotas').show();
+            });
+
+            //$('#postEvent').hide();
+            $('#proccesTransmmit').on('click', function (e) {
+                e.preventDefault();
+                const table = $('#uepaCuotaTable');
+                //const postEvent = $('#postEvent');
+                const body = table.find('tbody');
+                let content = '';
+
+                $('#deseoAplicar').show();
+
+                fetch('/pltickets.aspx/GetQuotesByUser', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(response => {
+
+                    if (!response.ok) return '[{}]';
+                    return response.json();
+
+                }).then(data => {
+                    let parsed = JSON.parse(data.d);
+                    //console.log("data GetQuotesByUser");
+                    //console.log(parsed);
+
+                    let cantidadCoutas = $('#cantidadCoutas');
+                    const montoPagar = $('#montoPagar');
+                    if (parsed.length > 0) {
+                        /*montoPagar.text(formatter.format(Number((parsed[0].MontoTotal) + Number(parsed[0].CargoServicio)) ?? 0));*/
+                        let totalPagar1 = 0;
+                        parsed.forEach(r => {
+                            totalPagar1 += Number(r.MontoPagar) ?? 0;
+                        });
+                        montoPagar.text(formatter2.format(Number(totalPagar1)));
+
+                        cantidadCoutas.val(parsed.length);
+
+                        if (parsed[0].Mensaje) {
+                            $('#deseoAplicar').prop('disabled', true);
+                            body[0].innerHTML = `
+                <tr class="info rounded">
+                    <td colspan='7'><span style='font-size: 16px; text-align: center'><strong>${parsed[0].Mensaje}</strong></span></td>
+                <tr>
+            `;
+                        } else {
+                            $('#deseoAplicar').prop('disabled', false);
+                            parsed.forEach((p, i) => {
+                                if (i === 0) {
+                                    content = `
+                            <tr class="warning">
+                                <th class="" scope="row">${(i + 1)}er Pago</th>
+                                <td>Hoy</td>
+                                <td>${formatter.format(Math.trunc(p.SubTotal))}</td>
+                                <td>${formatter.format(Math.trunc(p.InteresMensual))}</td>
+                                <td>${formatter.format(Math.trunc(p.MontoPagar))}
+																									
+                            </tr>
+                    `;
+                                    primeraCuotaSubtotal = Number(p.SubTotal);// + p.CargoServicio);
+                                    primeraCuotaCXS = Number(p.CargoServicio);
+                                    primeraCuotaGrantTotal = Number(p.MontoPagar);
+                                    primeraCuotaTnteresMensual = Number(p.InteresMensual);
+                                    //console.log(primeraCuotaSubtotal);
+                                    //console.log(primeraCuotaCXS);
+                                    //console.log(primeraCuotaGrantTotal);
+                                    //console.log(primeraCuotaTnteresMensual);
+                                } else {
+                                    let position = '';
+                                    let numeroCuota = (i + 1);
+                                    switch (numeroCuota) {
+                                        case 2:
+                                            position = '2do Pago';
+                                            break;
+                                        case 3:
+                                            position = '3er Pago';
+                                            break;
+                                        case 4:
+                                            position = '4to Pago';
+                                            break;
+                                        case 5:
+                                            position = '5to Pago';
+                                            break;
+                                        case 6:
+                                            position = '6to Final';
+                                            break;
+                                    }
+                                    content += `
+                        <tr class="warning">
+                            <th class="" scope="row">${position}</th>
+                            <td>${p.PaymentDate.includes('T') ? p.PaymentDate.split('T')[0] : p.PaymentDate}</td>
+                            <td>${formatter.format(Math.trunc(p.SubTotal))}</td>
+                            <td>${formatter.format(Math.trunc(p.InteresMensual))}</td>
+										  
+                            <td>${formatter.format(Math.trunc(p.MontoPagar))}</td>
+                        </tr>
+                    `;
+                                }
+                            });
+                            body[0].innerHTML = content;
+                            primerCuota.subtotal = primeraCuotaSubtotal;
+                            primerCuota.cxs = primeraCuotaCXS;
+                            primerCuota.grantotal = primeraCuotaGrantTotal;
+                            primerCuota.intereses = primeraCuotaTnteresMensual;
+                        }
+                    } else {
+                        $('#deseoAplicar').prop('disabled', true);
+                        body[0].innerHTML = `
+                <tr class="info rounded">
+                    <td colspan='7'><span style='font-size: 16px; text-align: center'><strong>
+                    No fue posible obtener el servicio de cuotas.
+                    </strong></span></td>
+                <tr>
+            `;
+                    }
+                }).catch(console.table);
+            });
+
+            $('#uepaCuota').on('click', function (e) {
+                const cbox = $('#checkUepaCuota');
+                const closeModal = $('#closeModal');
+                const proccesTransmmit = $('#proccesTransmmit');
+                const alertTermsAndConditions = document.getElementById('alertTermsAndConditions');
+                const lblGranTotal = $('#tbTotal');
+
+                if (!cbox[0].checked) {
+                    alertTermsAndConditions.style.display = 'block';
+                    return;
+                }
+
+                if (!lblGranTotal.text()) {
+                    return;
+                }
+
+                /* lblCargoPorServicio.text(primerCuota.cxs);*/
+                //lblGranTotal.text(primerCuota.grantotal);
+
+                //console.log("ENVIANDO DATOS");
+                //console.log(primerCuota.cuota);
+                //console.log(primerCuota.cxs);
+                //console.log(primerCuota.grantotal);
+                //console.log(primerCuota.intereses);
+                //console.log();
+                //console.log("FIN ENVIANDO DATOS");
+
+                const data = {
+                    'chargeForService': primerCuota.cxs,// lblCargoPorServicio.text().includes('$') ? lblCargoPorServicio.text().split('$')[1] : '0',
+                    'grandTotal': primerCuota.grantotal,// lblGranTotal.text().includes('$') ? lblGranTotal.text().split('$')[1] : '0',
+                    'primerCuota': primerCuota.subtotal
+                };
+
+                fetch('/pltickets.aspx/ProcessUepaCuotas', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(response => {
+
+                    if (!response.ok) return '[{}]';
+                    return response.json();
+
+                }).then(data => {
+
+                    //console.log(chargeService);
+                    //console.log(JSON.stringify(data));
+
+                    lblGranTotal.text(`RD${formatter2.format(primerCuota.grantotal)}`);
+
+                    $('#volverAtras').trigger('click');
+                    $('.glyphicon-trash').addClass('hidden');
+
+                }).catch(console.table);
+
+                alertTermsAndConditions.style.display = 'none';
+                proccesTransmmit.prop('disabled', true);
+                proccesTransmmit.text('Trámite en proceso');
+
+                //$('#proccesTransmmit000').text('Trámite en proceso');
+                //$('#proccesTransmmit000').prop('disabled', true);
+
+                //$('#sMensajeCuotas').hide();
+                //$('#sMensajeCuotas').addClass('hidden d-none');
+
+                $('#showUepaCuotas').removeClass('d-none');
+
+                closeModal.click();
+                $('#modalCuotas').modal('hide');
+
+                ////procesar pago
+                //$("#btnprocesarpago").click();
+                //$("#btnprocesarpago").addClass('hidden d-none');
+
+                //procesar pago
+                EnviarTarjeta("");
+            });
+
+            $("#proccesTransmmit000").on('click', function () {
+                //console.log("ok");
+                document.querySelector('#proccesTransmmit').click();
+                /* $('#modalCuotas').modal('show');*/
+            });
+            $("#proccesTransmmit111").on('click', function () {
+                //console.log("ok");
+                //$("#btnprocesarpago").click();
+                /*document.querySelector('#proccesTransmmit').click();*/
+                document.querySelector('#proccesTransmmit').click();
+            });
+
+
+            const formatter = new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                maximumFractionDigits: 0,
+                minimumFractionDigits: 0,
+            });
+            const formatter2 = new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD'
+            });
+        });
+    </script>
+    <style>
+        #signUpForm {
+            max-width: 500px;
+            background-color: #fff !important;
+            margin:0px auto;
+            padding: 9px;
+        }
+        #signUpForm .form-header {
+            gap: 5px;
+            text-align: center;
+            font-size: .9em;
+        }
+        #signUpForm .form-header .stepIndicator {
+            position: relative;
+            flex: 1;
+            padding-bottom: 30px;
+        }
+        #signUpForm .form-header .stepIndicator.active {
+            font-weight: 600;
+        }
+        #signUpForm .form-header .stepIndicator.finish {
+            font-weight: 600;
+            color: #5f0f78;
+        }
+        #signUpForm .form-header .stepIndicator::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            z-index: 9;
+            width: 20px;
+            height: 20px;
+            background-color: #f4d0ff;
+            border-radius: 50%;
+            border: 3px solid #fcf3ff;
+        }
+        #signUpForm .form-header .stepIndicator.active::before {
+            background-color: #d8b5e2;
+            border: 3px solid #f4d0ff;
+        }
+        #signUpForm .form-header .stepIndicator.finish::before {
+            background-color: #5f0f78;
+            border: 3px solid #d8b5e2;
+        }
+        #signUpForm .form-header .stepIndicator::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 8px;
+            width: 100%;
+            height: 3px;
+            background-color: #f3f3f3;
+        }
+        #signUpForm .form-header .stepIndicator.active::after {
+            background-color: #d8b5e2;
+        }
+        #signUpForm .form-header .stepIndicator.finish::after {
+            background-color: #5f0f78;
+        }
+        #signUpForm .form-header .stepIndicator:last-child:after {
+            display: none;
+        }
+        #signUpForm input {
+            padding: 12px 12px;
+            width: 100%;
+            font-size: 1em;
+            border: 1px solid #e3e3e3;
+            border-radius: 5px;
+        }
+        #signUpForm input:focus {
+            border: 1px solid #5f0f78;
+            outline: 0;
+        }
+        #signUpForm input.invalid {
+            border: 1px solid #ffaba5;
+        }
+        #signUpForm .step {
+          display: none;
+        }
+        #signUpForm .form-footer{
+            overflow:auto;
+            gap: 20px;
+        }
+
+        #signUpForm .form-footer button:hover {
+          opacity: 0.8;
+        }
+        
+        #signUpForm .form-footer #prevBtn {
+            background-color: #fff;
+            color: #5f0f78;
+        }
+    </style>
+
+</head>
+<body>
+    <form method="post" action="./pltickets.aspx?MerchantId=44787&amp;d=4C96C8430FE8408A8373C74EA54F7ED3287FD0D0E39D42D79AE93457F3EE1862" id="form1">
+
+        <script type="text/javascript">
+        //<![CDATA[
+
+
+                                                    function startTimer(duration, display) {
+                                                    var timer = duration,
+                                                        minutes, seconds;		
+                
+                                                    setInterval(function () {
+                                                        minutes = parseInt(timer / 60, 10);
+                                                        seconds = parseInt(timer % 60, 10);
+
+                                                        minutes = minutes < 10 ? '0' + minutes : minutes;
+                                                        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+                                                        display.text(minutes + ':' + seconds);
+
+                                                        if (--timer < 0) {
+                                                            //timer = duration;
+                                                            //window.location.href =
+                                                            history.back();
+                                                        }
+                                                    }, 1000);
+                                                    }
+
+
+                                                jQuery(function ($) {
+                                                    var fiveMinutes = 540
+                                                    $('#dtimer').removeClass('d-none hidden');
+                                                    display = $('#time');
+                                                    startTimer(fiveMinutes, display);
+                                                });//]]>
+        </script>
+
+
+        <div id="branding" class="container-fluid"></div>
+
+        <div id="dformulariopago" class="container">
+
+            <div class="row uepapay-header mt-3">
+                <div class="col-lg-12 col-12">
+                    <img style="width: 160px;" src="/images/Uepa_Pay.svg">
+                </div>
+                <div class="col-lg-10 col-12">
+                    <h4 class="mt-2 text-primary">Sistema de Pagos En Línea</h4>
+                    <p class="text-muted mb-3"></p>
+                </div>
+            </div>
+            <!--row-->
+            <div class="row">
+
+
+                <div class="col-xl-7 col-lg-6 col-md-6 col-12 mb-3">
+                    <div class="shadow-sm p-3 rounded-xxl bg-white mb-3">
+                        <div class="row">
+                            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10">
+                                <span class="header-title text-primary h5">Descripción</span>
+                                <small class="text-muted mb-3 d-none">Por favor confirmar datos del pago a realizar.</small>
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                                <div class="float-end">
+                                    <h6 class="bg-primary text-light text-center rounded py-1 px-2 m-0">
+                                        <span id="lblNumOrden">4762063</span>
+                                    </h6>
+                                    <input type="hidden" name="hfCustomField1Value" id="hfCustomField1Value" value="{&quot;Eventos&quot;:[{&quot;nombreEvento&quot;:&quot;Luis Fonsi \&quot;25 Años Tour\&quot;&quot;,&quot;DetallesTipoPrecio&quot;:[{&quot;importeTotalComisionUsuarioTipoPrecio&quot;:540,&quot;cantidad&quot;:1,&quot;idTipoPrecio&quot;:202}],&quot;fechaCelebracionEvento&quot;:&quot;2024-11-23T20:30:00.000&quot;,&quot;importeTotalComisionUsuario&quot;:540,&quot;idEvento&quot;:180}],&quot;Carrito&quot;:{&quot;EmailComprador&quot;:&quot;angelrivas.web@gmail.com&quot;,&quot;TiempoCarrito&quot;:&quot;20&quot;,&quot;FechaCarrito&quot;:&quot;2024-06-20T08:53:05.414&quot;},&quot;Comprador&quot;:{&quot;Nombre&quot;:&quot;Angel&quot;,&quot;Apellidos&quot;:&quot;Rivas&quot;,&quot;Telefono&quot;:&quot;8094164611&quot;,&quot;Direccion&quot;:&quot;&quot;,&quot;Pais&quot;:&quot;DO&quot;}}">
+                                    <input type="hidden" name="hfCustomField2Value" id="hfCustomField2Value">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <table class="table table-centered my-2">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <small class="text-muted">Pagar a: </small>
+                                        <br>
+                                        
+                                        <h5>
+                                            <span id="tbPropietario">Uepatickets </span>
+                                        </h5>
+                                    </td>
+                                    <td>
+
+                                        <small class="text-muted">Concepto: </small>
+                                        <br>
+                                        <h5>
+                                            <span id="lblConceptoPago">Localizador - VM6K0T6<br></span>
+                                        </h5>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-right">
+                                    <td>
+                                        <h5 class="m-0">Total:</h5>
+                                    </td>
+                                    <td class="text-right ">
+                                        <span id="tbTotal" class="h5 font-weight-semibold text-dark">RD$7,040.00</span>
+                                    </td>
+                                </tr>
+                                <tr id="row_cuotas" class="text-right" style="display: table-row;">
+                                    <td>
+                                        <h5 class="m-0 text-primary">Opción Cuotas:
+                                        </h5>
+                                    </td>
+                                    <td class="text-right py-0">
+
+                                        <div class="text-primary" id="btnPagarCuotas000">
+                                            <span id="sMensajeCuotas" class=""><small>4 cuotas de:</small><div class="h5 text-primary"> RD$2,112.00</div></span>
+
+                                            <button id="proccesTransmmit000" type="button" class="btn btn-outline-primary btn-sm py-0 btn-cuotas d-none">Ver plan de pago</button>
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+
+                        
+
+                        <!-- end table-responsive -->
+
+                        <div id="dtimer" class="list-group-item border-0">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-8">
+                                    <small class="text-secondary ms-1">Tiempo restante: <span style="font-weight: bold;" id="time">06:58</span></small>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <button type="button" class="btn btn-outline-danger btn-sm float-end py-0" data-bs-toggle="modal" data-bs-target="#staticBackdropNEWAceptar">OTP new</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end .border-->
+
+
+
+                    <div id="validateUepaCuota" class="btn btn-light w-100 shadow-sm rounded-xxl bg-white p-1" style="display: block;">
+                        <div class="row">
+                            <div class="col-4 col-md-3 col-lg-3 m-auto text-center">
+                                <img class="p-2" src="/images/uepacuotas.svg" style="max-width: 92px;">
+                            </div>
+                            <div class="col-8 col-md-9 col-lg-9 text-primary py-2">
+                                <b>¡Calificas para Uepa Cuotas! </b>
+                                <!--<br />
+                                        <small>Recibe tus tickets, paga después.</small>-->
+
+                                <div id="btnPagarCuotas">
+                                    <button id="proccesTransmmit" type="button" class="btn btn-outline-primary btn-cuotas btn-sm py-0" data-bs-toggle="modal" data-bs-target="#modalCuotas">Ver plan de pago</button>
+                                    <button id="showUepaCuotas" type="button" class="btn btn-dark btn-sm py-0 d-none" data-bs-toggle="modal" data-bs-target="#modalCuotasVer">Ver cuotas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end col -->
+
+                <div class="col-xl-5 col-lg-6 col-md-6 col-12">
+
+
+
+                    <div class="list-group shadow-sm rounded-xxl bg-white">
+
+                        <!-- Pagar con Cuenta Registrada box-->
+                        <div class="list-group-item border-0 border-bottom">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-8 col-8">
+                                    <div class="form-check mb-0">
+                                        <input type="radio" id="BillingOptRadio2" name="billingOptions" class="form-check-input">
+                                        <label for="BillingOptRadio2" class="form-check-label h5 text-primary mb-0">Pagar con <span class="uepapay-none me-2">Uepa Pay</span><img class="d-none000uepapay-inline-block" style="width: 80px; margin-top: -5px;" src="/images/cards.svg"></label>
+                                    </div>
+                                    <!-- <small class="mb-0 pl-3 pt-0 small text-primary">Ingresa y paga en cómodas cuotas</span>.</small>-->
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-4 text-right">
+                                    <a href="/#" id="aregistrarse" data-bs-toggle="modal" data-bs-target="#registro-modal" class="btn btn-outline-primary btn-sm mr-2 my-2 pull-right py-0 d-none">Regístrate</a>
+
+                                    <input class="btn btn-outline-danger btn-sm pull-right my-2 py-0" type="button" value="Cerrar" id="btnCerrarSession">
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- Tarjetas Registradas-->
+                            <div class="tab-pane my-3" id="tab2default">
+                                <div id="vaults">
+                                <div id="card-list" class="list-group text-left"><label class="list-group-item list-group-item-action"><input class="form-check-input" type="radio" id="tarjetaUsuario" name="tarjetaUsuario" value="264137" checked=""><img class="card-icon mb-1" src="/images/tarjetasIconos/mastercard.svg"><span class="text-primary card-numbers">************3100</span><input type="text" maxlength="4" placeholder="Ingresar CVV" autocomplete="off" id="ContentPlaceHolder1_CVV" class="form-control float-end w-50"></label></div></div>
+                            </div>
+                            <!-- FIN Tarjetas Registradas-->
+
+                            <div class="mx-0my-3 my-3 text-center" id="mensajeUsuario"><a class="btn btn-outline-secondary w-100 btn-add-vault000" data-bs-toggle="modal" data-bs-target="#create-card-modal"><span>+ Agregar tarjeta</span></a></div>
+
+
+                            <!-- LOGIN-->
+                            <div class="tab-pane text-center d-none hidden" id="tabLogin">
+                                <div class="mt-3">
+                                    
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-12 col-lg-12">
+
+                                            <div class="input-group">
+                                                <input name="txtUsuario" type="text" id="txtUsuario" class="form-control mb-3" placeholder="Usuario">
+
+                                                <input name="txtPassword" type="password" id="txtPassword" class="form-control mb-3" placeholder="Contraseña">
+                                            </div>
+                                            <p class="alert alert-warning p-2" id="mensajeLogin"></p>
+                                        </div>
+
+
+                                        <div class="col-6 col-lg-6">
+                                            <a class="btn btn-sm w-100 text-primary p-1" data-bs-toggle="modal" data-bs-target="#RecuperarPassModal">Recuperar contraseña</a>
+                                            <style>
+                                                .alert:empty {
+                                                    display: none;
+                                                }
+                                            </style>
+
+                                        </div>
+                                        <div class="col-6 col-lg-6">
+                                            <a id="btnLogin" class="btn btn-dark w-100">Conectar</a>
+                                        </div>
+
+                                    </div>
+                                    
+
+                                    <a class="btn btn-dark btn-sm d-none" href="LoginUepa.aspx">Iniciar Sesión</a>
+                                </div>
+                            </div>
+                            <!-- FIN LOGIN-->
+
+
+
+
+
+
+
+                        </div>
+                        <!-- end Pagar con Cuenta  Registrada box-->
+
+                        <!-- Credit/Debit Card box-->
+                        <div id="dcredit_card_box" class="d-none">
+                            <div class="row">
+                                <div class="col-sm-9 col-12">
+                                    <div class="form-check">
+                                        <input type="radio" id="BillingOptRadio1" name="billingOptions" class="form-check-input">
+                                        <label class="form-check-label h5" for="BillingOptRadio1">Pagar con Tarjeta de Crédito o Débito</label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-3 col-12 text-sm-rightmt-3mt-sm-0 text-right d-none d-sm-inline">
+                                    <img src="/images/cards/mastercard.svg" style="width: 24px">
+                                    <img src="/images/cards/visa.svg" style="width: 24px">
+                                    <img src="/images/cards/americanexpress.svg" style="width: 24px">
+
+                                </div>
+
+                            </div>
+                            <!-- end row -->
+
+                            <div class="tab-pane d-none hidden" id="tabTarjetas">
+                                <div class="row mt-2">
+                                    <div class="col-md-12 col-12">
+                                        <div class="form-group">
+                                            <label for="card_number">Número de Tarjeta</label>
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-text bg-white">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                                        <path fill="none" d="M0 0h24v24H0V0z"></path><path opacity="0" d="M4 12h16v6H4zm0-6h16v2H4z"></path><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></svg>
+                                                </div>
+                                                <input type="tel" id="card_number" class="form-control" data-bs-toggle="input-mask" data-mask-format="" placeholder="" maxlength="16">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--	<div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="card-name-on">Nombre en la tarjeta <small>Opcional</small></label>
+                                            <input type="text" id="card-name-on" class="form-control" placeholder="">
+                                        </div>
+                                    </div> -->
+                                    <div class="col-md-8 col-8">
+                                        <div class="form-group">
+                                            <label for="card_expiry_date">Fecha Exp.</label>
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-text bg-white">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                                        <path fill="none" d="M0 0h24v24H0V0z"></path><path opacity="0" d="M5 8h14V6H5z"></path><path d="M7 11h2v2H7zm12-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-4 3h2v2h-2zm-4 0h2v2h-2z"></path></svg>
+                                                </div>
+                                                <input data-mask="99/99" type="tel" id="card_expiry_date" class="form-control" data-bs-toggle="input-mask" data-mask-format="00/00" placeholder="MM/YY" maxlength="5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-4">
+                                        <div class="form-group">
+                                            <label for="card_cvv">CVV</label>
+                                            <input type="tel" id="card_cvv" class="form-control" data-bs-toggle="input-mask" data-mask-format="" placeholder="" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <hr class="border-secondary my-3">
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="nombre_txt">Nombre </label>
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-text bg-white">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                                        <path fill="none" d="M0 0h24v24H0V0z"></path><path opacity="0" d="M12 16c-2.69 0-5.77 1.28-6 2h12c-.2-.71-3.3-2-6-2z"></path><circle opacity="0" cx="12" cy="8" r="2"></circle><path d="M12 14c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2 2.7 0 5.8 1.29 6 2H6zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"></path></svg>
+
+                                                </div>
+                                                <input type="text" id="nombre_txt" class="form-control" data-bs-toggle="input-mask" data-mask-format="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="apellido_txt">Apellido </label>
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-text bg-white">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                                        <path fill="none" d="M0 0h24v24H0V0z"></path><path opacity="0" d="M12 16c-2.69 0-5.77 1.28-6 2h12c-.2-.71-3.3-2-6-2z"></path><circle opacity="0" cx="12" cy="8" r="2"></circle><path d="M12 14c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2 2.7 0 5.8 1.29 6 2H6zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"></path></svg>
+
+                                                </div>
+                                                <input type="text" id="apellido_txt" class="form-control" data-bs-toggle="input-mask" data-mask-format="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="email_txt">Correo Electrónico </label>
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-text bg-white">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" width="18">
+                                                        <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity="0"></path><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"></path></svg>
+
+                                                </div>
+                                                <input type="email" id="email_txt" class="form-control" data-bs-toggle="input-mask" data-mask-format="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="tel_txt">Teléfono </label>
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-text bg-white">
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                                        <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                                        <path d="M19 17.47c-.88-.07-1.75-.22-2.6-.45l-1.19 1.19c1.2.41 2.48.67 3.8.75v-1.49zM6.99 7.59c-.24-.83-.39-1.7-.45-2.59h-1.5c.09 1.32.35 2.59.75 3.8l1.2-1.21z" opacity="0"></path>
+                                                        <path d="M3 4c0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1zm13.4 13.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19zM6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51z"></path>
+                                                    </svg>
+
+                                                </div>
+                                                <input type="tel" id="tel_txt" class="form-control" data-bs-toggle="input-mask" data-mask-format="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-12">
+                                        <div class="form-check">
+                                            <input id="guestToRegister" type="checkbox" class="form-check-input"><label for="guestToRegister" class="form-check-label small text-primary">Guardar mi información de pago y crear una cuenta UepaPay</label><a href="#" data-bs-toggle="modal" data-bs-target="#aceptarTCModal" class="text-success small"> [...]</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                            </div>
+
+                        </div>
+                        <!-- end Credit/Debit Card box-->
+
+                        <script>
+                            // Mostrar u Ocultar Pagar con Tarjeta de Credito o Debito
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const checkbox = document.querySelector('#BillingOptRadio2');
+                                const divTarjetas = document.querySelector('#tabTarjetas');
+
+                                checkbox.addEventListener('change', function () {
+                                    if (this.checked) {
+                                        divTarjetas.classList.add('d-none');
+                                    } else {
+                                        divTarjetas.classList.remove('d-none');
+                                    }
+                                });
+                            });
+                        </script>
+
+
+
+                        <!-- Pagar con Cuenta UepaPay Registrada box-->
+                        <div class="list-group-item border-0 border-bottom d-none hidden">
+                            <div class="row">
+                                <div class="col-sm-9 col-12">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="BillingOptRadio4" name="billingOptions" class="custom-control-input">
+                                        <label class="custom-control-label form-check-label h5" for="BillingOptRadio4">Pagar con cuenta Uepa Pay</label>
+                                    </div>
+                                    <small class="mb-0 pl-3 pt-1 d-noned-lg-block small">Ingresa y utiliza tus tarjetas.</small>
+                                </div>
+                                <div class="col-sm-3 col-12 text-sm-rightmt-3mt-sm-0 text-center">
+                                    <img src="/images/Uepa_Pay.png" style="max-width: 54px;">
+                                </div>
+                            </div>
+
+
+                            
+                            <!-- FIN Tarjetas Registradas-->
+
+
+                            <!-- Tarjetas Registradas-->
+                            <div class="tab-pane text-center d-none hidden" id="tabLogin2">
+                                <div class="my-3">
+                                    
+                                        <div class="row align-items-center">
+                                            <div class="col-6 col-lg-4">
+                                                <input name="txtUsuario2" type="text" id="txtUsuario2" class="form-control mb-3" placeholder="Usuario">
+                                            </div>
+                                            <div class="col-6 col-lg-4">
+                                                <input name="txtPassword2" type="password" id="txtPassword2" class="form-control mb-3" placeholder="Contraseña">
+                                            </div>
+
+                                            <div class="col-12 col-lg-4">
+                                                <i id="btnLogin2" class="btn btn-dark w-100 mb-3">Conectar</i>
+                                            </div>
+                                            <div class="col-12">
+                                                <style>
+                                                    .alert:empty {
+                                                        display: none;
+                                                    }
+                                                </style>
+                                                <span class="alert alert-warning" id="mensajeLogin2"></span>
+                                            </div>
+                                            <div class="col-12">
+                                                <a class="small text-dark" href="https://uepa.com/ForgotPassword.aspx" target="_blank">Recuperar Contraseña</a>
+                                            </div>
+                                        </div>
+                                    
+
+                                    <a class="btn btn-dark btn-sm d-none" href="#">Iniciar Sesión</a>
+                                </div>
+                            </div>
+                            <!-- FIN Tarjetas Registradas-->
+
+                        </div>
+                        <!-- end Pagar con Cuenta UepaPay Registrada box-->
+
+                        <!-- Pagar con Popular box-->
+                        <div class="list-group-item border-0 border-bottom d-none">
+                            <div class="row">
+                                <div class="col-sm-11 col-10">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="BillingOptRadioPopular" name="billingOptions" class="custom-control-input">
+                                        <label class="custom-control-label form-check-label h5" for="BillingOptRadioPopular">Pagar con Popular</label>
+                                    </div>
+                                    <p class="mb-0 pl-3 pt-1 d-noned-lg-block small">Será redirigido al sitio web para completar su compra de forma segura.</p>
+                                </div>
+                                <div class="col-sm-1 col-2 text-right">
+                                    <img src="/images/popular.svg" style="max-width: 35px;">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end Pagar con Popular box-->
+
+
+                        <div class="list-group-item border-0 border-bottom">
+                            <div class="row">
+                                <div class="col-md-12 col-12 my-2 d-none">
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="aceptarcontrato">
+                                        <label class="custom-control-label" for="aceptarcontrato">Aceptar términos y condiciones</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="text-primary mb-3">
+                                        <span id="sMensajeCuotas111" class=""></span>
+                                        <button id="proccesTransmmit111" type="button" class="subscribe btn btn-primary w-100 shadow-success btn-lg" style="display: inline-block;">Pagar en cuotas de RD$2,112.00</button>
+                                    </div>
+
+                                    <div class="text-right">
+                                        <button id="btnprocesarpago" class="subscribe btn btn-success w-100 shadow-success btn-lg" type="button" style="display: inline-block;">Pagar total de RD$7,040.00</button>
+                                        <button id="btnprocesarpago3DS" class="d-none" type="button"></button>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mb-2">
+                                    <small class="text-muted mb-0">Su información de pago está protegida.</small><br>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#aceptarTCModal" class="text-success small">Ver términos de privacidad</a>.
+                                
+                                <div class="mt-3" style="text-align: center; max-width: 130px; margin: 0px auto">
+                                    <img style="max-width: 130px; opacity: 0.6;" src="../images/tarjetasIconos/Verified-ID-Check.png?ver=0.0.2">
+                                </div>
+
+                                </div>
+                                <!-- end col -->
+                            </div>
+                            <!-- end row-->
+                        </div>
+
+                    </div>
+                    <!--list-group-->
+
+                    <!-- Pagar con Paypal box-->
+                    <div class="list-group-item-action border p-3 mb-3 rounded d-none hidden">
+                        <div class="row">
+                            <div class="col-sm-8 col-9">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="BillingOptRadio3" name="billingOptions" class="custom-control-input">
+                                    <label class="custom-control-label font-16 font-weight-bold" for="BillingOptRadio3">Pagar con Paypal</label>
+                                </div>
+                                <p class="mb-0 pl-3 pt-1">Será redirigido al sitio web de PayPal para completar su compra de forma segura.</p>
+                            </div>
+                            <div class="col-sm-4 col-3 text-sm-right mt-3 mt-sm-0">
+                                <img src="/images/cards/paypal-icon.svg" style="max-width: 35px;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Pagar con Paypal box-->
+
+
+
+
+                </div>
+                <!-- end col -->
+
+
+            </div>
+
+            <small class="my-3 m-auto text-primary">
+                <span style="font-size: 9px;">© 2024 <b>Powered by Uepa</b>. All rights reserved.</span>
+            </small>
+
+        </div>
+    </form>
+
+    <!-- whatsapp button -->
+    <style>
+        .wa-soporte {
+            background: #FFF;
+            padding: 3px 6px;
+            border-radius: 99px;
+            color: #0c5a34;
+            font-weight: 600;
+            font-size: 10px;
+        }
+
+        .wa-float {
+            position: fixed;
+            width: 48px;
+            height: 48px;
+            bottom: 36px;
+            right: 24px;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none !important;
+            z-index: 100;
+        }
+
+        @media (max-width: 512px) {
+            .wa-soporte {
+                background: #FFF;
+                padding: 3px 6px;
+                border-radius: 99px;
+                color: #0c5a34;
+                font-weight: 600;
+                font-size: 10px;
+            }
+
+            .wa-float {
+                position: fixed;
+                width: 45px;
+                height: 45px;
+                bottom: 36px;
+                right: 18px;
+                border-radius: 50px;
+                text-align: center;
+                z-index: 100;
+            }
+        }
+    </style>
+    <a href="http://bit.ly/SoporteUepaPay" class="wa-float shadow000" target="_blank">
+        <span class="wa-soporte" style="">Soporte</span>
+        <img class="" src="../images/wa.svg">
+    </a>
+
+
+    <!-- Modal aceptarTCModal -->
+    <div class="modal fade" id="aceptarTCModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="aceptarTCModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aceptarTCModalLabel">Términos y Condiciones</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item active" role="presentation"><a class="nav-link active" data-bs-toggle="tab" href="#tyc" aria-expanded="true" aria-selected="true" role="tab">Términos</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" data-bs-toggle="tab" href="#pdp" aria-expanded="false" aria-selected="false" tabindex="-1" role="tab">Privacidad</a></li>
+                    </ul>
+                    <div class="tab-content my-3">
+                        <div id="tyc" class="tab-pane fade active in show" role="tabpanel" aria-labelledby="tyc-tab" style="text-align: justify;">
+
+                            <p class="">
+                                </p><p class="" style="">UepaPay es una plataforma digital para uso como herramienta de cobro de facturas u órdenes, avances y compras, disponible para personas físicas y jurídicas.</p>
+                                <p class="" style="">La plataforma UepaPay es operada por Multipagos Expresos, SRL, sociedad comercial organizada y existente conforme a las leyes de la República Dominicana.</p>
+                                <p class="" style="">Los presentes términos y condiciones regulan el uso que usted hará de la plataforma digital en todas las presentaciones del software ya sea vía la página web <span class="s2" style="color: #ee522c;">uepapay.com,&nbsp;</span>o app, entre otras.</p>
+                            <p></p>
+                            <p class="">
+                                </p><p class="" style="">El afiliado vende sus servicios o productos a sus clientes autorizando a UepaPay a gestionar el cobro de sus facturas y recibirá los fondos directo a su cuenta bancaria, previa afiliación con la empresa.<span class="">&nbsp;</span></p>
+                                <p class="" style="">Usted reconoce que UepaPay no es el vendedor del producto o servicio objeto de cobro.<span class="">&nbsp;</span></p>
+                                <p class="" style="">El vendedor es el afiliado destinatario del pago. En consecuencia, el vendedor del producto o servicio es el responsable de las condiciones, contenido y calidad del producto o servicio, etc.<span class="">&nbsp;</span></p>
+                                <p class="" style="">El cambio, reíntegro, cancelación o devolución será manejado por el vendedor/destinatario del pago de manera exclusiva.</p>
+                                <p class="" style="">El vendedor se obliga a cumplir con todas las obligaciones fiscales asociadas con el tipo de transacción objeto de cobro.</p>
+                                <p class="" style="">Bajo ningún concepto, se entenderá que el afiliado tiene una relación laboral con UepaPay.</p>
+                                <p class="" style="">El afiliado se obliga a mantener libre e indemne a UepaPay/Multipagos Expresos, SRL, sus gerentes, socios, administradores y demás personal de cualquier reclamación, demanda, gasto que se deriven de productos y servicios brindados u obtenidos a través del uso de los servicios de UepaPay.</p>
+                                <p class="" style="">UepaPay cobrará al remitente del pago de la factura un cargo sobre el valor de la transacción.</p>
+                                <p class="" style="">Mediante el acceso y uso de los servicios de esta plataforma usted de manera automática se vincula jurídicamente por estos términos y condiciones.</p>
+                                <p class="" style="">Cualquier modificación de los presentes términos y condiciones serán realizados a discreción de la empresa y serán publicados en esta misma plataforma. Su acceso o uso continuado de los servicios después de realizada la publicación constituye consentimiento a los nuevos términos y condiciones.</p>
+                            <p></p>
+
+
+                        </div>
+                        <div id="pdp" class="tab-pane fade" role="tabpanel" aria-labelledby="pdp-tab" style="text-align: justify;">
+                            <h3>Políticas de Privacidad</h3>
+                            <p>Uepatickets.com está comprometido en mantener su información suministrada confidencial. Solamente la organizadora de los eventos y funciones para las cuales los tickets fueron comprados conservará su información. Cuando recogemos su información personal es para mejorar su experiencia en nuestra plataforma, y notificarle sobre actualizaciones y servicios. Más allá de la actual organización para su evento, es nuestra política para no divulgar su información personal ni incluirlo en nuestros correos masivos, a menos que usted voluntariamente se suscriba a nuestros boletines. No vendemos, no negociamos ni alquilamos su información personal a terceros. Nuestra plataforma agrupa la información de los usuarios registrados y clientes, para generar informes y estudios de mercado para los socios de negocio. Estos informes no identificarán a miembros individuales.</p>
+
+                            <h4>Cookies:</h4>
+
+                            <p>Nuestro sitio utiliza cookies para personalizar y para mejorar su experiencia de compras. Estas cookies no contienen ninguna información confidencial o personal. Esto permite que mejoremos su experiencia de compras en nuestra plataforma. Por ejemplo, si usted ha visitado o seleccionado asientos (tickets) en el proceso de compras de un evento en particular, nosotros utilizamos esa información para conocer su intención y/o preferencias de compra y así informarle sobre eventos que podrían interesarle.</p>
+
+                            <h4>Seguridad:</h4>
+
+                            <p>Nuestra plataforma sigue estrictas normas de seguridad digital para proteger su información contra el acceso desautorizado. Para asegurar la seguridad de su información personal, incluyendo su número de la tarjeta de crédito, utilizamos tecnología Secure Socket Layer (SSL). SSL protege la información que cruza por Internet. Cualquier dato almacenado mantiene una localización segura off-site y se almacena en un servidor password-protected. Por favor, esté enterado, que no hay cosa tal como seguridad perfecta en Internet.</p>
+
+                            <p>Usted nunca debe compartir su contraseña o clave con cualquier persona. Usted puede cambiar su contraseña en cualquier momento teniendo acceso a "Mi Perfil" en nuestra Página de Inicio. Si usted no puede recordar su contraseña, puede solicitar “Cambiar Contraseña” y éste proceso de cambio le será enviado por email. Usted puede contactarnos en contacto@uepa.com para ayuda adicional.</p>
+
+                            <h4>Cambie su Información Personal:</h4>
+
+                            <p>Usted puede modificar o cambiar en cualquier momento cualquier información que usted nos haya proporcionado previamente, haciendo Click en "Mi Cuenta", después elige la sección apropiada para corregir, o para suprimir su información personal. Los cambios serán actualizados inmediatamente. Usted también puede contactarnos a contacto@uepa.com para ayuda adicional.</p>
+
+                            <h4>Cambios en la política:</h4>
+
+                            <p>Si usted tiene algunas preguntas o dudas respecto a nuestra política de privacidad, por favor siéntase libre de contactarnos contacto@uepa.com. Si continúa utilizando este sitio, usted está de acuerdo a las condiciones y políticas de seguridad. NO UTILICE ESTE SITIO SI USTED NO ESTÁ DE ACUERDO CON ESTAS POLÍTICAS DE PRIVACIDAD. Estas políticas de privacidad están sujetas a cambios.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <label class="btn btn-success" for="guestToRegister" data-bs-dismiss="modal">Aceptar términos y condiciones</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Modal aceptarTCModal -->
+
+    <!-- Modal Cuotas -->
+    <div class="modal text-dark fade" id="modalCuotas" tabindex="-1" aria-labelledby="Uepa Cuotas" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+            <div class="modal-content border-primary">
+                <div class="modal-header p-3">
+
+                    <img class="" src="/images/uepacuotas.svg" style="max-width: 72px;">
+
+                    <!--<span class="h4">Uepa Cuotas</span>-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="tab-content">
+
+                        <!-- pasoUnoCuotas-->
+                        <div class="tab-pane fade show active" id="pasoUnoCuotas" role="tabpanel" aria-labelledby="deseoAplicar" tabindex="0">
+                            <p class="text-center text-primary">Divide tu pago en <span id="cantidadCoutas"></span>cuotas que serán cargadas a tu tarjeta de manera automática.</p>
+                            <!--<p>El subtotal ya incluye cargo por servicio de boletería.</p>-->
+                            <div class="table-responsive">
+                                <table id="uepaCuotaTable" class="table table-sm text-primary text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>CUOTA #</th>
+                                            <th>FECHA PAGO</th>
+                                            <th>SUB TOTAL</th>
+                                            <th>CARGO CUOTAS</th>
+                                            <th>TOTAL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div id="postEvent" class="row">
+                                <div class="col-12 col-lg-12">
+                                    <div class="alert alert-primary text-end">
+                                        <div class="h4 mb-0">
+                                            <strong>TOTAL: </strong>RD<strong id="montoPagar"></strong>
+                                        </div>
+                                        <small>El subtotal ya incluye cargo por servicio de boletería.</small>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-3 col-lg-4"></div>
+                                <div class="col-3 col-lg-4"></div>
+                                <div class="col-6 col-lg-4">
+                                    <a id="deseoAplicar" class="btn btn-primary w-100 d-block" style="display: inline;">Continuar</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--pasoDosCuotas-->
+                        <div class="tab-pane fade" id="pasoDosCuotas" role="tabpanel" aria-labelledby="uepaCuota" tabindex="0">
+
+                            
+                       <div id="ContentRowTab" class="h-scroll" style="text-align:justify;">
+        <h3>Términos y Condiciones</h3>
+        <p>Para la adquisición de los productos que se ofrecen en este sitio <a href="https://www.uepatickets.com">www.uepatickets.com</a> es requisito necesario que lea y acepte los siguientes Términos y Condiciones que a continuación se indican. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento, a saber:</p>
+        
+        <h4>Primero. Definiciones:</h4>
+        <p>1.1. Queda convenido que para los efectos de este acuerdo se entiende que:</p>
+        <ul>
+            <li>
+                <strong>UEPA:</strong> Uepatickets, en lo adelante “UEPA”, es una marca registrada de Multipagos Expresos SRL, proveedor líder de servicios de procesamiento de transacciones, boletería y pago de facturas.
+            </li>
+            <li>
+                <strong>CLIENTE o USUARIO:</strong> El usuario, en lo adelante el “CLIENTE” o el “USUARIO”, es la persona que hace uso de los servicios de UEPA para la compra de boletas a eventos de cualquier naturaleza y servicios asociados.
+            </li>
+            <li>
+                <strong>Las PARTES:</strong> Para hacer referencia a UEPA y al Usuario actuando en conjunto, serán denominados en adelante como “Las PARTES”.
+            </li>
+            <li>
+                <strong>Sitio Web:</strong> <a href="http://www.uepatickets.com">www.uepatickets.com</a>, en adelante el “Sitio Web”.
+            </li>
+        </ul>
+        
+        <h4>Segundo. Responsabilidad:</h4>
+        <p>2.1. El CLIENTE reconoce que UEPA es un agente de cobro e intermediación para la distribución de boletas, a favor de los organizadores o promotores de espectáculos artísticos o deportivos, en consecuencia, declara y acepta que no es el organizador o promotor del evento. El organizador es el único responsable de la realización, logística, planificación, ejecución, montaje, riesgos, condiciones, organización y contenido del evento.</p>
+        
+        <h4>Tercero. Carácter Vinculante:</h4>
+        <p>3.1. Las PARTES reconocen y aceptan que el presente documento establece las condiciones de un contrato bilateral de servicio entre las mismas (en adelante el “Contrato”), por lo tanto, las manifestaciones de voluntad expresadas y/o transmitidas por medios electrónicos y/o informáticos se reputarán como válidas y eficaces, quedando a todo efecto probatorio constancia de las mismas.</p>
+        <p>3.2. Con la aceptación por medio de firma electrónica o cualquier otra señal electrónica equivalente del presente Contrato, el CLIENTE reconoce y acepta sus obligaciones descritas a continuación.</p>
+        
+        <h4>Cuarto. Alcance del Servicio:</h4>
+        <p>4.1. UEPA ofrece un servicio que habilita al CLIENTE a pagar en cuotas la compra de boletas para eventos, permitiendo pagar el monto acordado en plazos que van desde 2 cuotas con frecuencia de pago quincenal hasta 4 cuotas con frecuencia de pago mensual, según la anticipación de compra respecto a la fecha del evento lo permita. El monto máximo en el cual se podrán diferir los pagos será indicado en cada caso al USUARIO.</p>
+        <p>4.2. Todas las compras y transacciones que se lleven a cabo por medio de este Sitio Web están sujetas a un proceso de confirmación y verificación.</p>
+        <p>4.3. En el momento de la compra el CLIENTE es el responsable de facilitar sus datos correctamente en los procesos de compra establecidos por UEPA, debiendo prestar especial atención en cuanto a la introducción de los datos bancarios o de su tarjeta de débito o crédito y de carácter personal.</p>
+        <p>4.4. UEPA se reserva el derecho de rechazar las solicitudes que no cumplan con sus requisitos.</p>
+        <p>4.5. En caso de que el CLIENTE no sea aprobado y sea notificado luego de su primer pago de cuota, siendo este el que inicia el proceso y garantiza la reserva, se le reembolsará el valor abonado, con excepción de la tarifa de administración correspondiente, la cual no es reembolsable, y se detallará al momento de la facturación para conocimiento del USUARIO. UEPA habilitará al CLIENTE la opción de pagar totalmente la boleta en un tiempo máximo de 24 horas para no perder la reserva en caso de así desearlo.</p>
+        
+        <h4>Quinto. Método de Pago:</h4>
+        <p>5.1. Todos los pagos se realizarán mediante tarjeta de crédito o débito.</p>
+        <p>5.2. Una vez efectuado el primer pago, El CLIENTE autoriza expresamente a UEPA a realizar de forma automática el débito correspondiente a las cuotas restantes al medio de pago autorizado por el CLIENTE para el pago de la primera cuota. En el caso de que el pago de estas cuotas no sea aceptado, el CLIENTE autoriza expresamente a UEPA a cobrar dichas cuotas a través de otros métodos, como pueden ser otras tarjetas de crédito o débito que tenga registrada en su perfil de Uepa Tickets y/o Uepa Pay, o débito vía cuenta bancaria, siempre que se cuente con autorización previa y expresa del USUARIO.</p>
+        
+        <h4>Sexto. Forma de Pago:</h4>
+        <p>6.1. Cuando el CLIENTE es aprobado para pago en cuotas, hecho que será debidamente notificado mediante correo electrónico, éste deberá hacer un primer pago al momento de la compra cuyo monto se calculará según el valor de la(s) boleta(s) y el plazo al cual el USUARIO haya decidido diferirlo. Este primer pago, al igual que los demás, correspondes a la suma de la primera cuota y una tarifa de administración por el servicio de pago en cuotas.</p>
+        <p>6.2. El segundo cobro será efectuado dentro de los quince (15) o treinta (30) días, según la frecuencia del plan asignado, contados a partir de la primera cuota, y así sucesivamente hasta alcanzar el plazo máximo acordado. el CLIENTE deberá pagar las cuotas correspondientes incluyendo la tarifa de administración.</p>
+        <p>6.3. El primer pago garantiza la reserva de la boleta siempre y cuando se paguen correctamente el resto de las cuotas. La tarifa de administración y el cargo de servicio de boletería no son reembolsables.</p>
+        <p>6.4. En caso de que el valor de la boleta deba ser pagado en su totalidad antes del evento, la entrada será reservada hasta cinco (5) días luego de la fecha de vencimiento del pago, a excepción de la última cuota que solo contará con dos (2) días de gracia una vez vencida la fecha de pago. Si no se ha completado el pago para este momento, se entenderá cancelado unilateralmente el acuerdo por parte del CLIENTE, perdiendo el valor abonado hasta entonces, la reserva se eliminará y las entradas se pondrán nuevamente a la venta al público general. El monto abonado hasta dicho momento por el CLIENTE no es reembolsable.</p>
+        <p>6.5. Una vez realizado el pago de la última cuota requerida, en el tiempo indicado, el CLIENTE recibirá la confirmación definitiva de su entrada de manera digital. Una vez UEPA envía la entrada, la misma queda bajo la responsabilidad única del CLIENTE.</p>
+        <p>6.6. En caso de boletas que serán pagadas en su totalidad una vez pasado el evento, las entradas serán reservadas hasta 15 días antes del evento, siempre y cuando el CLIENTE haya pagado mínimo dos (2) cuotas previo a esta fecha. Si no se ha completado el pago de las dos (2) primeras cuotas para este momento, se entenderá cancelado unilateralmente el acuerdo por parte del CLIENTE, perdiendo el valor abonado hasta entonces, la reserva se eliminará y las entradas se pondrán nuevamente a la venta al público general. A pesar de que el evento se haya llevado a cabo, el CLIENTE reconoce su responsabilidad de abonar a UEPA la cantidad de cuotas pendientes hasta finalizar el pago completo. El CLIENTE entiende y acepta que si no paga las cuotas pendientes posteriores al evento se hace responsable de abonar a UEPA cualquier gasto asociado con la gestión de la cobranza tardía, además del importe de cuotas pendientes.</p>
+        
+        <h4>Séptimo. Pago Anticipado:</h4>
+        <p>7.1. El CLIENTE tiene derecho de saldar o prepagar todas las cuotas pendientes sin que se le aplique ninguna penalidad, pero no se le devolverá la tarifas administración por el servicio de pago en cuotas, cuyo monto se informará desde el primer pago.</p>
+        
+        <h4>Octavo. Comunicaciones:</h4>
+        <p>8.1. Las PARTES reconocen y aceptan que en el presente documento legal se establecen las condiciones de un acuerdo bilateral de servicio y que el mismo podrá ser respaldado por la transmisión y recepción de mensajes a través de herramientas de comunicación electrónicas como, por ejemplo, pero no limitado a estas, SMS, correo electrónico, llamadas telefónicas, mensajes y audios de Whatsapp, y cualquier otro medio utilizado para comunicación entre Las PARTES.</p>
+        
+        <h4>Noveno. Datos Personales:</h4>
+        <p>9.1. El CLIENTE presta su consentimiento a que se le soliciten datos de carácter personal y de la existencia de una base de datos que permitan corroborar su identidad y su situación crediticia. El CLIENTE acepta que UEPA, y empresas colaboradoras que ésta designe, podrán consultar dicha base de datos. El CLIENTE otorga expresamente permiso a UEPA y/o empresas relacionadas a consultar los burós de crédito. Adicionalmente, UEPA queda explícitamente autorizada para transferir cualquier información y cederla a terceros socios comerciales siempre en cumplimiento con la Ley de Protección Integral de los Datos Personales.</p>
+    
+        <h4>Décimo. Prevalencia:</h4>
+        <p>10.1. Para todos los efectos legales, el servicio objeto del presente Contrato se entiende regulado, en todos aquellos aspectos que no se tratan de manera expresa en el presente documento, conforme a los términos y condiciones del Sitio Web. En caso de existir diferencias entre éstos y aquellos, prevalecerá el presente Contrato.</p>
+</div>
+
+
+
+
+                            <br>
+                            <div class="">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="material-switch float-end" style="margin-left: 6px;">
+                                                    
+                                                    <input id="checkUepaCuota" type="checkbox" name="checkUepaCuota">
+                                                    <label for="checkUepaCuota" class="label-success"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <label class="aceptar" for="checkUepaCuota" style="margin-top: 10px; margin-left: 5px;">
+                                                    Aceptar términos y condiciones para continuar el proceso.
+                                                </label>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <span id="alertTermsAndConditions" class="text-danger" style="display: none">
+                                    <strong>Debe aceptar los terminos y condiciones para aplicar a Uepa Cuotas.</strong>
+                                </span>
+                            </div>
+                            <hr>
+                            <div class="row">
+
+                                <div class="col-4 col-md-4 col-lg-4">
+                                    <a id="volverAtras" class="btn btn-outline-secondary">Volver
+                                    </a>
+                                </div>
+                                <div class="col-2 col-md-4 col-lg-4">
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-4">
+                                    <button id="uepaCuota" type="button" class="btn btn-success w-100" disabled="">Aceptar y Pagar</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- END pasoDosCuotas-->
+
+                    </div>
+                    <!--tab-content-->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--modal Ver Cuotas-->
+    <div class="modal fade" id="modalCuotasVer" tabindex="-1" role="dialog" aria-labelledby="Ver Uepa Cuotas" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+            <div class="modal-content border-dark">
+                <div class="modal-header p-3">
+                    <span class="h4">Ver Cuotas</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                
+                <div class="modal-body">
+
+                    <p class="text-center">Divide tu pago en <span id="cantidadCoutas2"></span>cuotas que serán cargadas a tu tarjeta de manera automática.</p>
+
+                    <div class="table-responsive">
+                        <table id="uepaCuotaTable2" class="table text-warning" style="text-align: center">
+                            <thead>
+                                <tr>
+                                    <th>CUOTA #</th>
+                                    <th>FECHA PAGO</th>
+                                    <th>SUB TOTAL</th>
+                                    <th>CARGO CUOTAS</th>
+
+                                    <th>TOTAL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="postEvent2" class="">
+
+                        <div class="alert alert-dark text-end m-0">
+                            <div class="h4">
+                                <strong>TOTAL: </strong>RD<strong id="montoPagar2"></strong>
+                            </div>
+                            <small>El subtotal ya incluye cargo por servicio de boletería.</small>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar tarjeta -->
+    <div class="modal modal-blur fade" id="create-card-modal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar tarjeta</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" style="">
+                    <form class="bg-white">
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <label for="CredictCardOwner" style="text-transform: uppercase">NOMBRE PROPIETARIO DE LA TARJETA</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text bg-white" id="basic-addon1">
+                                        <svg class="float-left" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path><path fill="" opacity=".3" d="M12 16c-2.69 0-5.77 1.28-6 2h12c-.2-.71-3.3-2-6-2z"></path><circle fill="" opacity=".3" cx="12" cy="8" r="2"></circle><path fill="" d="M12 14c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2 2.7 0 5.8 1.29 6 2H6zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"></path></svg></span>
+                                    <input type="text" autocomplete="off" required="" autofocus="" style="text-transform: uppercase" placeholder="" name="txtCreditCardOwner_express" min="4" maxlength="90" id="txtCreditCardOwner_express" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-12">
+                                <label for="ContentPlaceHolder1_txtCreditCard">NÚMERO DE TARJETA</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text bg-white" id="basic-addon1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path><path fill="#333333" opacity=".3" d="M4 12h16v6H4zm0-6h16v2H4z"></path><path fill="#333333" d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></svg></span>
+                                    <input type="tel" autocomplete="cc-number" required="" autofocus="" style="text-transform: uppercase" placeholder="" name="txtCreditCard_express" min="16" maxlength="16" id="txtCreditCard_express" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-8 col-8">
+                                <label for="cardExpiry">FECHA DE EXPIRACIÓN</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white" id="basic-addon1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" width="18">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M5 8h14V6H5z" opacity=".3"></path>
+                                            <path d="M7 11h2v2H7zm12-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-4 3h2v2h-2zm-4 0h2v2h-2z"></path>
+                                        </svg></span>
+                                    <input required="" autocomplete="cc-exp" name="txtFhExpiration_express" data-date-format="mm/yyyy" type="tel" min="4" max="7" maxlength="7" id="txtFhExpiration_express" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-4">
+                                <label for="cardCVC">CVV</label>
+                                <input name="txCardKey_express" required="" placeholder="" autocomplete="cc-csc" type="tel" min="3" max="4" maxlength="4" id="txCardKey_express" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <style>
+                                    .alert:empty {
+                                        display: none;
+                                    }
+                                </style>
+                                <p class="alert alert-warning" id="mensajeGuardarTC"></p>
+                            </div>
+                            <div class="col-12">
+                                <button onclick="return false;" class="subscribe btn btn-primary w-100 mt-3" id="btnGuardarTC_express">Guardar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer" style="text-align: center !important; font-size: 9px;">
+                    <span class="text-muted w-100">Si continúa, declarará que está de acuerdo con las <a href="#" data-bs-toggle="modal" data-bs-target="#aceptarTCModal">Condiciones del servicio</a>
+                        <br>
+                        y el <a href="#" data-bs-toggle="modal" data-bs-target="#aceptarTCModal">Aviso de privacidad</a> de Uepa.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Agregar tarjeta FIN -->
+
+    <!-- Modal Registro -->
+    <div class="modal modal-blur fade" id="registro-modal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary">Crea tu cuenta <span class="d-none d-md-inline">Uepapay</span> para continuar<span class="d-none d-md-inline"> con el pago</span></h5>
+                    <!--<p class="mb-0 pl-3 pt-0 small text-primary">Crea tu cuenta Uepapay para continuar con el pago</p>-->
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="bg-white">
+                        <div class="row">
+
+
+                            <div class="col-md-6 col-6 mb-3">
+                                <label for="nombre_registro">Nombre</label>
+                                <div class="input-group">
+                                    <input type="text" autocomplete="off" style="text-transform: uppercase" placeholder="" name="nombre_registro" maxlength="90" id="nombre_registro" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-6 mb-3">
+                                <label for="apelllido_registro">Apellido</label>
+                                <div class="input-group">
+                                    <input type="text" autocomplete="off" style="text-transform: uppercase" placeholder="" name="apelllido_registro" maxlength="90" id="apelllido_registro" class="form-control">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-6 mb-3">
+                                <label for="correo_registro">Correo</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="txtCorreoElectronico-addon1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" width="18">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity="0"></path><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"></path></svg></span>
+                                    <input type="text" autocomplete="off" placeholder="" name="correo_registro" maxlength="90" id="correo_registro" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6 mb-3">
+                                <label for="tel_registro">Celular</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="txtCelular-addon1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" width="18">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7 5h10v14H7z" opacity="0"></path><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"></path></svg></span>
+                                    <input type="text" autocomplete="off" style="text-transform: uppercase" placeholder="" name="tel_registro" maxlength="90" id="tel_registro" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6 mb-3">
+                                <label for="contrasena_registro">Contraseña</label>
+                                <div class="input-group mb-3">
+                                    <input type="password" autocomplete="off" autofocus="" placeholder="" name="contrasena_registro" maxlength="90" id="contrasena_registro" class="form-control">
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-md-6 col-12">
+
+                                <a onclick="return false;" class="subscribe btn btn-primary w-100 mt-4" id="btnRegistrarse_express">Aceptar y Guardar</a>
+
+                                <style>
+                                    .alert:empty {
+                                        display: none;
+                                    }
+                                </style>
+                                <p class="alert alert-warning" id="mensajeGuardarRegistro"></p>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer" style="text-align: center !important; font-size: 11px;">
+
+                    <p class="text-muted w-100">
+                        Si continúa, declarará que está de acuerdo con las <a href="#" data-bs-toggle="modal" data-bs-target="#aceptarTCModal">Condiciones del servicio</a>
+                        <br>
+                        y el <a href="#" data-bs-toggle="modal" data-bs-target="#aceptarTCModal">Aviso de privacidad</a> de Uepa.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal Registro FIN -->
+
+    <!-- Modal OTP -->
+    <div class="modal modal-blur fade" id="otp-modal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmación de cuenta</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" style="">
+                    <form class="bg-white">
+                        <div class="row">
+                            <div class="col-md-6 col-12 mb-3">
+                                <p>Ingrese su código de confirmación temporal:</p>
+                                <div class="input-group mb-3">
+                                    <input type="text" autocomplete="off" required="" autofocus="" placeholder="" name="otp_registro" maxlength="4" id="otp_registro" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <style>
+                                    .alert:empty {
+                                        display: none;
+                                    }
+                                </style>
+                                <p class="alert alert-warning" id="mensajeOTP"></p>
+                            </div>
+                            <div class="col-md-6 col-12 mb-3">
+                                <button onclick="return false;" class="subscribe btn btn-primary w-100 mt-3" id="btnConfirmarOTP_express">Confirmar</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal OTP FIN -->
+
+    
+    <div class="modal modal-blur fade" id="RecuperarPassModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title">Recuperar contraseña</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body mb-3" style="">
+                    <form class="bg-white">
+                        <div class="row">
+
+                            <div class="col-md-8 col-8">
+
+                                <div class="input-group">
+                                    <input type="text" autocomplete="off" autofocus="" placeholder="Ingrese su correo electrónico" name="tb_email_recuperar_pass" maxlength="50" id="tb_email_recuperar_pass" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-4">
+                                <button onclick="return false;" class="subscribe btn btn-primary w-100" id="btnConfirmarRecuperarPass">Enviar</button>
+                            </div>
+
+                            <div class="col-md-12 col-12">
+                                <style>
+                                    .alert:empty {
+                                        display: none;
+                                    }
+                                </style>
+                                <p class="alert alert-warning my-3 p-2 text-center" id="mensajeRecuperarPass"></p>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal OPT new Aceptar -->
+    <div class="modal fade" id="staticBackdropNEWAceptar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropNEWAceptarLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <!--<h1 class="modal-title fs-5" id="staticBackdropNEWAceptarLabel">Modal OTP NEW</h1>-->
+            <img class="py-1" src="/images/uepacuotas.svg" style="max-width:72px;">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center p-2">
+                    <p class="text-primary">
+                        Divide tu pago en cuotas que serán cargadas a tu tarjeta de manera automática.
+                    </p>
+                    <p>Amelia, al aplicar a Uepa Cuotas, reservarás tus boletas para Morat pagando hoy únicamente
+                    la primera cuota.</p>
+                    <p>Según el plan que preparemos para ti, podrás dividir esta compra en hasta 4 cuotas de RD$1,026.3</p>
+                </div>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckNEWForm">
+                    <label class="form-check-label" for="flexSwitchCheckNEWForm">Aceptar políticas de privacidad</label>
+                    <br/><small>Ver términos y condiciones</small>
+                </div>
+
+            </div><!--modal-body-->
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>-->
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#staticBackdropNEWForm">Continuar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+     <!-- Modal OPT new Form -->
+     <div class="modal fade" id="staticBackdropNEWForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropNEWFormLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <!--<h1 class="modal-title fs-5" id="staticBackdropNEWFormLabel">Modal OTP NEW</h1>-->
+            <img class="py-1" src="/images/uepacuotas.svg" style="max-width:72px;"/>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form id="signUpForm" action="#!">
+                    
+                    <div class="form-header d-flex mb-4 d-none">
+                        <span class="stepIndicator small">Datos</span>
+                        <span class="stepIndicator small">Plan</span>
+                        <span class="stepIndicator small">Condiciones</span>
+                        <span class="stepIndicator small">4</span>
+                        <span class="stepIndicator small">5</span>
+                    </div>
+                
+                    <!-- step 1 -->
+                    <div class="step">
+
+                        <div class="text-center my-4">
+                            <img src="/images/card-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
+                            <small style="font-size: 12px;" class="small mb-4">Completa y verifica tus datos</small>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control bg-light" type="tel" placeholder="Número de Cédula" oninput="this.className = ''" name="tel">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control bg-light" type="tel" placeholder="Teléfono" oninput="this.className = ''" name="tel">
+                        </div>
+                        <small>*Validaremos tu teléfono con un código OTP</small>
+                        <br/>
+                        <!--<div class="mb-3">
+                            <input type="email" placeholder="Email Address" oninput="this.className = ''" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" placeholder="Password" oninput="this.className = ''" name="password">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" placeholder="Confirm Password" oninput="this.className = ''" name="password">
+                        </div>-->
+                    </div>
+                
+                    <!-- step 2 -->
+                    <div class="step">
+
+                        <div class="text-center my-4">
+                            <img src="/images/sms-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
+                            <small style="font-size: 12px;" class="small mb-4">Ingresa el código</small>
+                        </div>
+                    
+                        <div class="row mb-3">
+                            <div class="col-3">
+                                <input type="tel" maxlength="1" class="text-center form-control bg-light" placeholder=" " aria-label="0" aria-describedby="basic-addon1" oninput="moveToNext(this, 'input2')" id="input1" name="input1">
+                            </div>
+                            <div class="col-3">
+                                <input type="tel" maxlength="1" class="text-center form-control bg-light" placeholder=" " aria-label="0" aria-describedby="basic-addon2" oninput="moveToNext(this, 'input3')" id="input2" name="input2">
+                            </div>
+                            <div class="col-3">
+                                <input type="tel" maxlength="1" class="text-center form-control bg-light" placeholder=" " aria-label="0" aria-describedby="basic-addon3" oninput="moveToNext(this, 'input4')" id="input3" name="input3">
+                            </div>
+                            <div class="col-3">
+                                <input type="tel" maxlength="1" class="text-center form-control bg-light" placeholder=" " aria-label="0" aria-describedby="basic-addon4" id="input4" name="input4">
+                            </div>
+                        </div>
+                        
+                        <script>
+                            // Esta función se encarga de mover entre inputs
+                            function moveToNext(current, nextFieldId) {
+                                if (current.value.length >= current.maxLength) {
+                                    const nextField = document.getElementById(nextFieldId);
+                                    if (nextField) {
+                                        nextField.focus();
+                                    }
+                                }
+                            }
+                        </script>
+
+                        <!--<div class="mb-3">
+                            <input type="text" placeholder="Linked In" oninput="this.className = ''" name="linkedin">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" placeholder="Twitter" oninput="this.className = ''" name="twitter">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" placeholder="Facebook" oninput="this.className = ''" name="facebook">
+                        </div> -->
+                    </div>
+                
+                    <!-- step 3 -->
+                    <div class="step">
+                        <div class="text-center my-4">
+                            <img src="/images/card-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
+                            <small style="font-size: 12px;" class="small mb-4">Completa y verifica tus datos</small>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control bg-light" type="text" placeholder="Cédula" value="40224090767" oninput="this.className = ''" name="cedula">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control bg-light disabled" type="text" placeholder="Nombre" value="Amelia Núnez" oninput="this.className = ''" name="fullname">
+                        </div>
+
+                        <div class="mb-3">
+                            <input class="form-control bg-light" type="text" placeholder="Dirección" oninput="this.className = ''" name="address">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control bg-light disabled" type="text" placeholder="Celular" oninput="this.className = ''" name="mobile">
+                        </div>
+                    </div>
+                
+                     <!-- step 4 -->
+                     <div class="step">
+                        <h1>4</h1>
+                    </div>
+
+                     <!-- step 5 -->
+                     <div class="step">
+                        <h1>5</h1>
+                     </div>
+           
+                </form>
+
+
+
+            </div><!--modal-body-->
+            <div class="modal-footer">
+
+                 
+                <!--<button class="btn btn-secondary btn-lg" type="button" id="prevBtn" onclick="nextPrev(-1)">Volver</button>-->
+                <button class="btn btn-primary w-100 btn-lg" type="button" id="nextBtn" onclick="nextPrev(1)">Continuar</button>
+
+                <div class="text-center w-100">
+                    <small>¿No recibiste tu código?, <span>Reenviar</span></small>
+                </div>
+
+               <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Continuar</button>-->
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        let currentTab = 0; // Current tab is set to be the first tab (0)
+        showTab(currentTab); // Display the current tab
+        
+        function showTab(n) {
+          // This function will display the specified tab of the form...
+          var x = document.getElementsByClassName("step");
+          x[n].style.display = "block";
+          //... and fix the Previous/Next buttons:
+          if (n == 0) {
+            document.getElementById("prevBtn").style.display = "none";
+          } else {
+            document.getElementById("prevBtn").style.display = "inline";
+          }
+          if (n == (x.length - 1)) {
+            document.getElementById("nextBtn").innerHTML = "Verificar";
+          } else {
+            document.getElementById("nextBtn").innerHTML = "Continuar";
+          }
+          //... and run a function that will display the correct step indicator:
+          fixStepIndicator(n)
+        }
+        
+        function nextPrev(n) {
+          // This function will figure out which tab to display
+          var x = document.getElementsByClassName("step");
+          // Exit the function if any field in the current tab is invalid:
+          if (n == 1 && !validateForm()) return false;
+          // Hide the current tab:
+          x[currentTab].style.display = "none";
+          // Increase or decrease the current tab by 1:
+          currentTab = currentTab + n;
+          // if you have reached the end of the form...
+          if (currentTab >= x.length) {
+            // ... the form gets submitted:
+            document.getElementById("signUpForm").submit();
+            return false;
+          }
+          // Otherwise, display the correct tab:
+          showTab(currentTab);
+        }
+        
+        function validateForm() {
+          // This function deals with validation of the form fields
+          var x, y, i, valid = true;
+          x = document.getElementsByClassName("step");
+          y = x[currentTab].getElementsByTagName("input");
+          // A loop that checks every input field in the current tab:
+          for (i = 0; i < y.length; i++) {
+            // If a field is empty...
+            if (y[i].value == "") {
+              // add an "invalid" class to the field:
+              y[i].className += " invalid";
+              // and set the current valid status to false
+              valid = false;
+            }
+          }
+          // If the valid status is true, mark the step as finished and valid:
+          if (valid) {
+            document.getElementsByClassName("stepIndicator")[currentTab].className += " finish";
+          }
+          return valid; // return the valid status
+        }
+        
+        function fixStepIndicator(n) {
+          // This function removes the "active" class of all steps...
+          var i, x = document.getElementsByClassName("stepIndicator");
+          for (i = 0; i < x.length; i++) {
+            x[i].className = x[i].className.replace(" active", "");
+          }
+          //... and adds the "active" class on the current step:
+          x[n].className += " active";
+        }
+    
+    </script>
+
+
+
+
+    <script src="/js/B4/popper.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+
+    <script>
+        $("#BrowserJavaScriptEnabled").val('true');
+        $("#BrowserTimeZone").val(new Date().getTimezoneOffset());
+        if (navigator.language) {
+            $("#BrowserLanguage").val(navigator.language);
+        }
+        if (window.screen) {
+            $("#BrowserColorDepth").val(window.screen.colorDepth);
+
+            if (window.devicePixelRatio) {
+                $("#BrowserScreenWidth").val(window.screen.width * window.devicePixelRatio);
+                $("#BrowserScreenHeight").val(window.screen.height * window.devicePixelRatio);
+            }
+            else {
+                $("#BrowserScreenWidth").val(window.screen.width);
+                $("#BrowserScreenHeight").val(window.screen.height);
+            }
+        }
+    </script>
+
+</body>
+</html>

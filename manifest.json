@@ -1,0 +1,22 @@
+{
+  "name": "Uepa Pay",
+  "short_name": "Uepa Pay",
+  "start_url": "/index.html?utm_source=homescreen",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Pagos en Línea",
+  "icons": [
+    {
+      "src": "/images/512.png?ver=0.0.1",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/256.png?ver=0.0.1",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ]
+}
