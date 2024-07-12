@@ -2603,24 +2603,27 @@
             </div>
             <div class="modal-body">
                 <div class="text-center p-2">
-                    <p class="text-primary">
+                    <p class="text-primary h4">
                         Divide tu pago en cuotas que serán cargadas a tu tarjeta de manera automática.
                     </p>
                     <p>Amelia, al aplicar a Uepa Cuotas, reservarás tus boletas para Morat pagando hoy únicamente
                     la primera cuota.</p>
                     <p>Según el plan que preparemos para ti, podrás dividir esta compra en hasta 4 cuotas de RD$1,026.3</p>
                 </div>
-
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckNEWForm">
-                    <label class="form-check-label" for="flexSwitchCheckNEWForm">Aceptar políticas de privacidad</label>
-                    <br/><small>Ver términos y condiciones</small>
+                <div class="">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckNEWForm">
+                        <label class="form-check-label" for="flexSwitchCheckNEWForm">Aceptar políticas de privacidad</label>
+                        <br/><a href="#" class="small">Ver términos y condiciones</a>
+                    </div>
                 </div>
 
             </div><!--modal-body-->
             <div class="modal-footer">
                 <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>-->
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#staticBackdropNEWForm">Continuar</button>
+                <div class="text-center w-100">
+                    <button type="button" class="btn btn-primary btn-lg px-5 rounded-5" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#staticBackdropNEWForm">Comenzar</button>
+                </div>
             </div>
         </div>
         </div>
@@ -2661,6 +2664,7 @@
                             <input class="form-control bg-light" type="tel" placeholder="Teléfono" oninput="this.className = ''" name="tel">
                         </div>
                         <small>*Validaremos tu teléfono con un código OTP</small>
+
                         <br/>
                         <!--<div class="mb-3">
                             <input type="email" placeholder="Email Address" oninput="this.className = ''" name="email">
@@ -2695,6 +2699,10 @@
                             <div class="col-3">
                                 <input type="tel" maxlength="1" class="text-center form-control bg-light" placeholder=" " aria-label="0" aria-describedby="basic-addon4" id="input4" name="input4">
                             </div>
+                        </div>
+
+                        <div class="text-center w-100 mb-3">
+                            <small>¿No recibiste tu código?, <span>Reenviar</span></small>
                         </div>
                         
                         <script>
@@ -2743,26 +2751,23 @@
                 
                      <!-- step 4 -->
                      <div class="step">
-                        <h1>4</h1>
                         <div class="text-center my-4">
-                            <img src="/images/card-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
-                            <small style="font-size: 12px;" class="small mb-4">Completa y verifica tus datos</small>
+                            <img src="/images/check-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
                         </div>
-                        <div class="mb-3">
-                            <input class="form-control bg-light" type="text" placeholder="..." value="" oninput="this.className = ''" name="">
+                        <div class="mb-3 text-center">
+                            <p class="h4 text-primary mb-3">¡Genial! Tus datos han sido validados correctamente</p>
                         </div>
                     </div>
 
                      <!-- step 5 -->
                      <div class="step">
-                        <h1>5</h1>
-                        <div class="text-center my-4">
-                            <img src="/images/card-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
-                            <small style="font-size: 12px;" class="small mb-4">Completa y verifica tus datos</small>
+                        <div class="mb-3 text-center">
+                            <p class="h4 text-dark mb-3">Amelia, por tu seguridad, y para que tu plan de pagos sea más personalizado, validaremos rápidamente tu identidad.</p>
+                            <p style="font-size: 12px;" class="small text-secondary mb-3">*Asegúrate de estar en un lugar con muy buena iluminación*</p>
                         </div>
-                        <div class="mb-3">
-                            <input class="form-control bg-light" type="text" placeholder="..." value="" oninput="this.className = ''" name="">
-                        </div>
+                        <div class="mb-3 text-center">
+                            <button class="btn btn-primary btn-lg" type="button" id="vamosBtn">Vamos</button>
+                        </div>  
                      </div>
            
                 </form>
@@ -2772,13 +2777,12 @@
             </div><!--modal-body-->
             <div class="modal-footer">
 
-                 
-                <!--<button class="btn btn-secondary btn-lg" type="button" id="prevBtn" onclick="nextPrev(-1)">Volver</button>-->
-                <button class="btn btn-primary w-100 btn-lg" type="button" id="nextBtn" onclick="nextPrev(1)">Continuar</button>
-
                 <div class="text-center w-100">
-                    <small>¿No recibiste tu código?, <span>Reenviar</span></small>
+                <!--<button class="btn btn-secondary btn-lg" type="button" id="prevBtn" onclick="nextPrev(-1)">Volver</button>-->
+                    <button class="btn btn-primary btn-lg px-5 rounded-5" type="button" id="nextBtn" onclick="nextPrev(1)">Continuar</button>
                 </div>
+
+             
 
                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 <button type="button" class="btn btn-primary">Continuar</button>-->
