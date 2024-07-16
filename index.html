@@ -1,0 +1,9 @@
+<script>
+    // Redirigir a pltickets.html si se encuentra el parámetro utm_source=homescreen en la URL
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('utm_source') === 'homescreen') {
+        window.location.replace('./pltickets.html?utm_source=homescreen');
+      }
+    });
+  </script>
