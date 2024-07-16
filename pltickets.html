@@ -1370,98 +1370,114 @@
         });
     </script>
     <style>
-        #signUpForm {
-            max-width: 500px;
-            background-color: #fff !important;
-            margin:0px auto;
-            padding: 9px;
-        }
-        #signUpForm .form-header {
-            gap: 5px;
-            text-align: center;
-            font-size: .9em;
-        }
-        #signUpForm .form-header .stepIndicator {
-            position: relative;
-            flex: 1;
-            padding-bottom: 30px;
-        }
-        #signUpForm .form-header .stepIndicator.active {
-            font-weight: 600;
-        }
-        #signUpForm .form-header .stepIndicator.finish {
-            font-weight: 600;
-            color: #5f0f78;
-        }
-        #signUpForm .form-header .stepIndicator::before {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            z-index: 9;
-            width: 20px;
-            height: 20px;
-            background-color: #f4d0ff;
-            border-radius: 50%;
-            border: 3px solid #fcf3ff;
-        }
-        #signUpForm .form-header .stepIndicator.active::before {
-            background-color: #d8b5e2;
-            border: 3px solid #f4d0ff;
-        }
-        #signUpForm .form-header .stepIndicator.finish::before {
-            background-color: #5f0f78;
-            border: 3px solid #d8b5e2;
-        }
-        #signUpForm .form-header .stepIndicator::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 8px;
-            width: 100%;
-            height: 3px;
-            background-color: #f3f3f3;
-        }
-        #signUpForm .form-header .stepIndicator.active::after {
-            background-color: #d8b5e2;
-        }
-        #signUpForm .form-header .stepIndicator.finish::after {
-            background-color: #5f0f78;
-        }
-        #signUpForm .form-header .stepIndicator:last-child:after {
-            display: none;
-        }
-        #signUpForm input {
-            padding: 12px 9px;
-            width: 100%;
-            font-size: 1em;
-            border: 1px solid #e3e3e3;
-            border-radius: 5px;
-        }
-        #signUpForm input:focus {
-            border: 1px solid #5f0f78;
-            outline: 0;
-        }
-        #signUpForm input.invalid {
-            border: 1px solid #ffaba5;
-        }
-        #signUpForm .step {
-          display: none;
-        }
-        #signUpForm .form-footer{
-            overflow:auto;
-            gap: 20px;
-        }
 
-        #signUpForm .form-footer button:hover {
-          opacity: 0.8;
-        }
-        
-        #signUpForm .form-footer #prevBtn {
-            background-color: #fff;
-            color: #5f0f78;
-        }
+        /*** OTP new styles ***/
+            .modal-dialog-full {
+                height: 100% !important;
+                width: 100% !important;
+                margin: 0px auto !important;
+                border-radius: 0px !important;
+            }
+            .modal-content-full {
+                height: 100% !important;
+                min-height: 720px !important;
+                width: 100% !important;
+                margin: 0px !important;
+                border-radius: 0px !important;
+                border: 0px !important;
+            }
+            #otpNewForm {
+                max-width: 500px;
+                background-color: #fff !important;
+                margin:0px auto;
+                padding: 9px;
+            }
+            #otpNewForm .form-header {
+                gap: 5px;
+                text-align: center;
+                font-size: .9em;
+            }
+            #otpNewForm .form-header .stepIndicator {
+                position: relative;
+                flex: 1;
+                padding-bottom: 30px;
+            }
+            #otpNewForm .form-header .stepIndicator.active {
+                font-weight: 600;
+            }
+            #otpNewForm .form-header .stepIndicator.finish {
+                font-weight: 600;
+                color: #5f0f78;
+            }
+            #otpNewForm .form-header .stepIndicator::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                z-index: 9;
+                width: 20px;
+                height: 20px;
+                background-color: #f4d0ff;
+                border-radius: 50%;
+                border: 3px solid #fcf3ff;
+            }
+            #otpNewForm .form-header .stepIndicator.active::before {
+                background-color: #d8b5e2;
+                border: 3px solid #f4d0ff;
+            }
+            #otpNewForm .form-header .stepIndicator.finish::before {
+                background-color: #5f0f78;
+                border: 3px solid #d8b5e2;
+            }
+            #otpNewForm .form-header .stepIndicator::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 8px;
+                width: 100%;
+                height: 3px;
+                background-color: #f3f3f3;
+            }
+            #otpNewForm .form-header .stepIndicator.active::after {
+                background-color: #d8b5e2;
+            }
+            #otpNewForm .form-header .stepIndicator.finish::after {
+                background-color: #5f0f78;
+            }
+            #otpNewForm .form-header .stepIndicator:last-child:after {
+                display: none;
+            }
+            #otpNewForm input {
+                padding: 12px 9px;
+                width: 100%;
+                font-size: 1em;
+                border: 1px solid #e3e3e3;
+                border-radius: 5px;
+            }
+            #otpNewForm input:focus {
+                border: 1px solid #5f0f78;
+                outline: 0;
+            }
+            #otpNewForm input.invalid {
+                border: 1px solid #ffaba5;
+            }
+            #otpNewForm .step {
+            display: none;
+            }
+            #otpNewForm .form-footer{
+                overflow:auto;
+                gap: 20px;
+            }
+
+            #otpNewForm .form-footer button:hover {
+            opacity: 0.8;
+            }
+            
+            #otpNewForm .form-footer #prevBtn {
+                background-color: #fff;
+                color: #5f0f78;
+            }
     </style>
 
 </head>
@@ -2593,54 +2609,74 @@
     </div>
 
     <!-- Modal OPT new Aceptar -->
-    <div class="modal fade" id="staticBackdropNEWAceptar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropNEWAceptarLabel" aria-hidden="true">
+    <div class="modal modal-blur fade" id="staticBackdropNEWAceptar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropNEWAceptarLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
-            <!--<h1 class="modal-title fs-5" id="staticBackdropNEWAceptarLabel">Modal OTP NEW</h1>-->
-            <img class="py-1" src="/images/uepacuotas.svg" style="max-width:72px;">
+            <div class="modal-header border-0">
+            <!--<h1 class="modal-title fs-5" id="staticBackdropNEWAceptarLabel">Modal OTP NEW</h1>
+            <img class="py-1" src="/images/uepacuotas.svg" style="max-width:72px;">-->
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body pt-0">
                 <div class="text-center p-2">
-                    <p class="text-primary h4">
+                    
+                    <img class="py-3" src="/images/uepacuotas.svg" style="max-width:92px;">
+
+                    <p class="text-primary h4 my-3 px-5">
                         Divide tu pago en cuotas que serán cargadas a tu tarjeta de manera automática.
                     </p>
                     <p>Amelia, al aplicar a Uepa Cuotas, reservarás tus boletas para Morat pagando hoy únicamente
                     la primera cuota.</p>
                     <p>Según el plan que preparemos para ti, podrás dividir esta compra en hasta 4 cuotas de RD$1,026.3</p>
                 </div>
-                <div class="">
+                <hr/>
+                <div class="w-100 mb-2">
                     <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckNEWForm">
-                        <label class="form-check-label" for="flexSwitchCheckNEWForm">Aceptar políticas de privacidad</label>
-                        <br/><a href="#" class="small">Ver términos y condiciones</a>
+                        <label class="form-check-label" for="flexSwitchCheckNEWForm">Aceptar políticas de privacidad. <a href="#" class="small">[Ver más...]</a></label>
+                        <!--<br/><a href="#" class="small">Ver términos y condiciones</a>-->
                     </div>
                 </div>
 
             </div><!--modal-body-->
             <div class="modal-footer">
-                <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>-->
+                
+            
                 <div class="text-center w-100">
-                    <button type="button" class="btn btn-primary btn-lg px-5 rounded-5" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#staticBackdropNEWForm">Comenzar</button>
+                    <button type="button" class="btn btn-primary btn-lg px-5 rounded-5 disabled" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#staticBackdropNEWForm">Comenzar</button>
                 </div>
             </div>
         </div>
         </div>
     </div>
+    <script>
+        // habilita el boton continuar si el checkbox esta seleccionado
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkbox = document.getElementById('flexSwitchCheckNEWForm');
+            const button = document.querySelector('button[data-bs-target="#staticBackdropNEWForm"]');
+
+            checkbox.addEventListener('change', function() {
+                if (checkbox.checked) {
+                    button.classList.remove('disabled');
+                } else {
+                    button.classList.add('disabled');
+                }
+            });
+        });
+    </script>
 
      <!-- Modal OPT new Form -->
-     <div class="modal fade" id="staticBackdropNEWForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropNEWFormLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-            <!--<h1 class="modal-title fs-5" id="staticBackdropNEWFormLabel">Modal OTP NEW</h1>-->
-            <img class="py-1" src="/images/uepacuotas.svg" style="max-width:72px;"/>
+     <div class="modal modal-blur fade" id="staticBackdropNEWForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropNEWFormLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-full modal-dialog-centered">
+        <div class="modal-content modal-content-full">
+            <div class="modal-header border-0 d-none0">
+            <!--<h1 class="modal-title fs-5" id="staticBackdropNEWFormLabel">Modal OTP NEW</h1>
+            <img class="py-1" src="/images/uepacuotas.svg" style="max-width:72px;"/>-->
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body pt-0">
 
-                <form id="signUpForm" action="#!">
+                <form id="otpNewForm" action="#!">
                     
                     <div class="form-header d-flex mb-4 d-none">
                         <span class="stepIndicator small">Datos</span>
@@ -2650,31 +2686,22 @@
                         <span class="stepIndicator small">5</span>
                     </div>
                 
-                    <!-- step 1 -->
+                   <!-- Step 1 -->
                     <div class="step">
-
                         <div class="text-center my-4">
                             <img src="/images/card-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
                             <small style="font-size: 12px;" class="small mb-4">Completa y verifica tus datos</small>
                         </div>
                         <div class="mb-3">
-                            <input class="form-control bg-light" type="tel" placeholder="Número de Cédula" oninput="this.className = ''" name="tel">
+                            <input class="form-control bg-light" type="tel" placeholder="Número de Cédula" oninput="this.className = ''" name="cedula">
                         </div>
                         <div class="mb-3">
-                            <input class="form-control bg-light" type="tel" placeholder="Teléfono" oninput="this.className = ''" name="tel">
+                            <input id="celularOTPnew" class="form-control bg-light" type="tel" placeholder="Teléfono" oninput="this.className = ''" name="tel">
                         </div>
                         <small>*Validaremos tu teléfono con un código OTP</small>
-
-                        <br/>
-                        <!--<div class="mb-3">
-                            <input type="email" placeholder="Email Address" oninput="this.className = ''" name="email">
+                        <div class="text-center w-100 mt-3">
+                            <button class="btn btn-primary btn-lg px-5 rounded-5" type="button" id="nextBtn" onclick="nextPrev(1)">Continuar</button>
                         </div>
-                        <div class="mb-3">
-                            <input type="password" placeholder="Password" oninput="this.className = ''" name="password">
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" placeholder="Confirm Password" oninput="this.className = ''" name="password">
-                        </div>-->
                     </div>
                 
                     <!-- step 2 -->
@@ -2717,158 +2744,271 @@
                             }
                         </script>
 
-                        <!--<div class="mb-3">
-                            <input type="text" placeholder="Linked In" oninput="this.className = ''" name="linkedin">
+                        <div class="text-center w-100">
+                            <!--<button class="btn btn-secondary btn-lg" type="button" id="prevBtn" onclick="nextPrev(-1)">Volver</button>-->
+                            <button class="btn btn-primary btn-lg px-5 rounded-5" type="button" id="nextBtn" onclick="nextPrev(1)">Continuar</button>
                         </div>
-                        <div class="mb-3">
-                            <input type="text" placeholder="Twitter" oninput="this.className = ''" name="twitter">
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" placeholder="Facebook" oninput="this.className = ''" name="facebook">
-                        </div> -->
+
                     </div>
                 
-                    <!-- step 3 -->
+                    <!-- Step 3 -->
                     <div class="step">
                         <div class="text-center my-4">
                             <img src="/images/card-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
                             <small style="font-size: 12px;" class="small mb-4">Completa y verifica tus datos</small>
                         </div>
                         <div class="mb-3">
-                            <input class="form-control bg-light" type="text" placeholder="Cédula" value="40224090767" oninput="this.className = ''" name="cedula">
+                            <input class="form-control bg-light" type="tel" placeholder="Cédula" value="40224090767" oninput="this.className = ''" name="cedula">
                         </div>
                         <div class="mb-3">
                             <input class="form-control bg-light disabled" type="text" placeholder="Nombre" value="Amelia Núnez" oninput="this.className = ''" name="fullname">
                         </div>
-
                         <div class="mb-3">
                             <input class="form-control bg-light" type="text" placeholder="Dirección" oninput="this.className = ''" name="address">
                         </div>
                         <div class="mb-3">
-                            <input class="form-control bg-light disabled" type="text" placeholder="Celular" oninput="this.className = ''" name="mobile">
+                            <input id="celularStep3" class="form-control bg-light disabled" type="tel" placeholder="Celular" oninput="this.className = ''" name="mobile">
+                        </div>
+                        <div class="text-center w-100 mt-3">
+                            <button class="btn btn-primary btn-lg px-5 rounded-5" type="button" id="nextBtn" onclick="nextPrev(1)">Continuar</button>
                         </div>
                     </div>
                 
                      <!-- step 4 -->
                      <div class="step">
                         <div class="text-center my-4">
+
                             <img src="/images/check-cuotas.svg" class="mb-2" style="max-width:128px; margin: 0 auto; display: block;"/>
                         </div>
                         <div class="mb-3 text-center">
                             <p class="h4 text-primary mb-3">¡Genial! Tus datos han sido validados correctamente</p>
                         </div>
+
+                        <div class="text-center w-100 mt-3">
+                            <!--<button class="btn btn-secondary btn-lg" type="button" id="prevBtn" onclick="nextPrev(-1)">Volver</button>-->
+                            <button class="btn btn-primary btn-lg px-5 rounded-5" type="button" id="nextBtn" onclick="nextPrev(1)">Continuar</button>
+                        </div>
+
                     </div>
 
-                     <!-- step 5 -->
-                     <div class="step">
-                        <div class="mb-3 text-center">
-                            <p class="h4 text-dark mb-3">Amelia, por tu seguridad, y para que tu plan de pagos sea más personalizado, validaremos rápidamente tu identidad.</p>
+                    <!-- step 5 -->
+                    <div class="step">
+                       
+                        <div class="mb-3 text-center"> 
+                            <img class="py-3" src="/images/uepacuotas.svg" style="max-width:92px;">
+
+                            <br/><br/><br/>
+
+                            <p class="h4 text-primary my-3 px-5">Por tu seguridad, y para que tu plan de pagos sea más personalizado, validaremos rápidamente tu identidad.</p>
                             <p style="font-size: 12px;" class="small text-secondary mb-3">*Asegúrate de estar en un lugar con muy buena iluminación*</p>
                         </div>
                         <div class="mb-3 text-center">
-                            <button class="btn btn-primary btn-lg" type="button" id="vamosBtn">Vamos</button>
+                           <!--  <button class="btn btn-primary btn-lg px-5 rounded-5" type="button" id="nextBtn" onclick="nextPrev(1)">Vamos</button>-->
+                           <button class="btn btn-primary btn-lg px-5 rounded-5" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#cameraModal" type="button" id="vamosBtn">Vamos</button>
                         </div>  
-                     </div>
+                    </div>
+
+            
+
+
            
                 </form>
 
 
 
             </div><!--modal-body-->
-            <div class="modal-footer">
+        <!-- <div class="modal-footer d-none">
 
                 <div class="text-center w-100">
-                <!--<button class="btn btn-secondary btn-lg" type="button" id="prevBtn" onclick="nextPrev(-1)">Volver</button>-->
+                    <button class="btn btn-secondary btn-lg" type="button" id="prevBtn" onclick="nextPrev(-1)">Volver</button>
                     <button class="btn btn-primary btn-lg px-5 rounded-5" type="button" id="nextBtn" onclick="nextPrev(1)">Continuar</button>
                 </div>
 
-             
 
-               <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Continuar</button>-->
-            </div>
+            </div>-->
         </div>
         </div>
     </div>
 
+
+    <!-- The Modal OPEN CAMERA -->
+    <div class="modal fade" id="cameraModal" tabindex="-1" aria-labelledby="cameraModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-full modal-dialog-centered">
+            <div class="modal-content modal-content-full">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+           
+                            <video class="rounded-3" id="video" width="100%" autoplay></video>
+                            <canvas id="canvas" style="display: none;"></canvas>
+                            <div class="mt-3 text-center m-auto">
+                                <button id="takePhoto" class="btn btn-outline-primary btn-lg border-2" type="button">Hacer foto</button>
+                            </div>
+                       
+                
+                            <div class="my-3 p-3 rounded-3" id="photos"></div>
+                            
+                      
+                </div><!--modal-body-->
+            </div>
+        </div>
+    </div>
+
+
+
     <script>
-        // STEPS para OTP new
+        // OPT new ALL
+     document.addEventListener('DOMContentLoaded', function() {
+        const takePhotoButton = document.getElementById('takePhoto');
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const photosContainer = document.getElementById('photos');
+        let stream;
+
+        const startCamera = async () => {
+            try {
+            stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            video.srcObject = stream;
+            } catch (error) {
+            console.error("Error accessing the camera: ", error);
+            }
+        };
+
+        const stopCamera = () => {
+            if (stream) {
+            stream.getTracks().forEach(track => track.stop());
+            }
+        };
+
+        const takePhoto = () => {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+            const img = document.createElement('img');
+            img.src = canvas.toDataURL('image/png');
+            img.className = 'img-fluid mt-2';
+            photosContainer.appendChild(img);
+        };
+
+        const cameraModalElement = document.getElementById('cameraModal');
+        cameraModalElement.addEventListener('shown.bs.modal', startCamera);
+        cameraModalElement.addEventListener('hidden.bs.modal', stopCamera);
+        takePhotoButton.addEventListener('click', takePhoto);
+        });
+
+        // Funciones para manejar los pasos del formulario
         let currentTab = 0; // Current tab is set to be the first tab (0)
         showTab(currentTab); // Display the current tab
-        
+
         function showTab(n) {
-          // This function will display the specified tab of the form...
-          var x = document.getElementsByClassName("step");
-          x[n].style.display = "block";
-          //... and fix the Previous/Next buttons:
-          if (n == 0) {
+        // This function will display the specified tab of the form...
+        var x = document.getElementsByClassName("step");
+        x[n].style.display = "block";
+        //... and fix the Previous/Next buttons:
+        if (n == 0) {
             document.getElementById("prevBtn").style.display = "none";
-          } else {
+        } else {
             document.getElementById("prevBtn").style.display = "inline";
-          }
-          if (n == (x.length - 1)) {
+        }
+        if (n == (x.length - 1)) {
             document.getElementById("nextBtn").innerHTML = "Verificar";
-          } else {
+        } else {
             document.getElementById("nextBtn").innerHTML = "Continuar";
-          }
-          //... and run a function that will display the correct step indicator:
-          fixStepIndicator(n)
         }
-        
+        //... and run a function that will display the correct step indicator:
+        fixStepIndicator(n);
+        }
+
         function nextPrev(n) {
-          // This function will figure out which tab to display
-          var x = document.getElementsByClassName("step");
-          // Exit the function if any field in the current tab is invalid:
-          if (n == 1 && !validateForm()) return false;
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          // if you have reached the end of the form...
-          if (currentTab >= x.length) {
+        // This function will figure out which tab to display
+        var x = document.getElementsByClassName("step");
+        // Exit the function if any field in the current tab is invalid:
+        if (n == 1 && !validateForm()) return false;
+        // Hide the current tab:
+        x[currentTab].style.display = "none";
+        // Increase or decrease the current tab by 1:
+        currentTab = currentTab + n;
+        // if you have reached the end of the form...
+        if (currentTab >= x.length) {
             // ... the form gets submitted:
-            document.getElementById("signUpForm").submit();
+            document.getElementById("otpNewForm").submit();
             return false;
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
         }
-        
+        // Otherwise, display the correct tab:
+        showTab(currentTab);
+        }
+
         function validateForm() {
-          // This function deals with validation of the form fields
-          var x, y, i, valid = true;
-          x = document.getElementsByClassName("step");
-          y = x[currentTab].getElementsByTagName("input");
-          // A loop that checks every input field in the current tab:
-          for (i = 0; i < y.length; i++) {
+        // This function deals with validation of the form fields
+        var x, y, i, valid = true;
+        x = document.getElementsByClassName("step");
+        y = x[currentTab].getElementsByTagName("input");
+        // A loop that checks every input field in the current tab:
+        for (i = 0; i < y.length; i++) {
             // If a field is empty...
             if (y[i].value == "") {
-              // add an "invalid" class to the field:
-              y[i].className += " invalid";
-              // and set the current valid status to false
-              valid = false;
+            // add an "invalid" class to the field:
+            y[i].className += " invalid";
+            // and set the current valid status to false
+            valid = false;
             }
-          }
-          // If the valid status is true, mark the step as finished and valid:
-          if (valid) {
+        }
+        // If the valid status is true, mark the step as finished and valid:
+        if (valid) {
             document.getElementsByClassName("stepIndicator")[currentTab].className += " finish";
-          }
-          return valid; // return the valid status
         }
-        
+        return valid; // return the valid status
+        }
+
         function fixStepIndicator(n) {
-          // This function removes the "active" class of all steps...
-          var i, x = document.getElementsByClassName("stepIndicator");
-          for (i = 0; i < x.length; i++) {
+        // This function removes the "active" class of all steps...
+        var i, x = document.getElementsByClassName("stepIndicator");
+        for (i = 0; i < x.length; i++) {
             x[i].className = x[i].className.replace(" active", "");
-          }
-          //... and adds the "active" class on the current step:
-          x[n].className += " active";
         }
-    
+        //... and adds the "active" class on the current step:
+        x[n].className += " active";
+        }
+
+        // Restricción de entrada de teléfono a solo números
+        document.addEventListener('DOMContentLoaded', function() {
+        const telInputs = document.querySelectorAll('input[type="tel"]');
+
+        telInputs.forEach(function(input) {
+            input.addEventListener('input', function() {
+            this.value = this.value.replace(/\D/g, '');
+            });
+
+            // Opcional: establecer patrón para mostrar solo el teclado numérico en dispositivos móviles
+            input.setAttribute('pattern', '[0-9]*');
+        });
+        });
+
+        // Esta función se encarga de mover entre inputs
+        function moveToNext(current, nextFieldId) {
+        if (current.value.length >= current.maxLength) {
+            const nextField = document.getElementById(nextFieldId);
+            if (nextField) {
+            nextField.focus();
+            }
+        }
+        }
+
+        // Copiar valor de un input a otro al hacer clic en "Continuar" del Step 1
+        document.addEventListener('DOMContentLoaded', function() {
+        const inputStep1 = document.getElementById('celularOTPnew');
+        const inputStep3 = document.getElementById('celularStep3');
+        const nextBtnStep1 = document.getElementById('nextBtnStep1');
+
+        if (nextBtnStep1) {
+            nextBtnStep1.addEventListener('click', function() {
+            inputStep3.value = inputStep1.value;
+            });
+        }
+        });
+
     </script>
-
-
 
 
     <script src="/js/B4/popper.min.js"></script>
