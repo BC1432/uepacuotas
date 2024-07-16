@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
+		<script>
+			// Redirigir a pltickets.html si se encuentra el parámetro utm_source=homescreen en la URL
+			document.addEventListener('DOMContentLoaded', function() {
+			  const urlParams = new URLSearchParams(window.location.search);
+			  if (urlParams.get('utm_source') === 'homescreen') {
+				window.location.replace('./pltickets.html?utm_source=homescreen');
+			  }
+			});
+		  </script>
+		  
 		<meta charset="utf-8">
 		<title>FormWizard_v1</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
