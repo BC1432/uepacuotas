@@ -2598,7 +2598,7 @@
                 
             
                 <div class="text-center w-100">
-                    <button type="button" class="btn btn-primary btn-lg px-5 rounded-5 disabled" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#staticBackdropNEWForm">Comenzar</button>
+                    <button type="button" class="btn btn-primary btn-lg px-5 rounded-5 disabled" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalNewForm">Comenzar</button>
                 </div>
             </div>
         </div>
@@ -2608,7 +2608,7 @@
         // habilita el boton continuar si el checkbox esta seleccionado
         document.addEventListener('DOMContentLoaded', function() {
             const checkbox = document.getElementById('flexSwitchCheckNEWForm');
-            const button = document.querySelector('button[data-bs-target="#staticBackdropNEWForm"]');
+            const button = document.querySelector('button[data-bs-target="#modalNewForm"]');
 
             checkbox.addEventListener('change', function() {
                 if (checkbox.checked) {
@@ -2621,11 +2621,11 @@
     </script>
 
      <!-- Modal OPT new Form -->
-     <div class="modal modal-blur fade" id="staticBackdropNEWForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropNEWFormLabel" aria-hidden="true">
+     <div class="modal bg-white modal-blur fade" id="modalNewForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalNewFormLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-full modal-dialog-centered">
         <div class="modal-content modal-content-full">
             <div class="modal-header border-0 d-none0">
-            <!--<h1 class="modal-title fs-5" id="staticBackdropNEWFormLabel">Modal OTP NEW</h1>
+            <!--<h1 class="modal-title fs-5" id="modalNewFormLabel">Modal OTP NEW</h1>
             <img class="py-1" src="./images/uepacuotas.svg" style="max-width:72px;"/>-->
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -2752,9 +2752,9 @@
                         <div class="mb-3 text-center"> 
                             
                             <img class="py-3" src="./images/camera_front.svg" style="max-width: 128px;">
-                            
+
                             <p class="h4 text-primary my-3 px-3">Por tu seguridad, y para que tu plan de pagos sea más personalizado, validaremos rápidamente tu identidad.</p>
-                            <p style="font-size: 12px;" class="small text-secondary mb-3">*Asegúrate de estar en un lugar con muy buena iluminación*</p>
+                            <p style="font-size: 12px;" class="small text-secondary mb-3">*Asegúrate de estar en un lugar con buena iluminación*</p>
                         </div>
                         <div class="mb-3 text-center">
                            <!--  <button class="btn btn-primary btn-lg px-5 rounded-5" type="button" id="nextBtn" onclick="nextPrev(1)">Vamos</button>-->
