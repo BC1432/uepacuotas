@@ -61,7 +61,7 @@ function obtenerImagen(nombreTarjeta) {
 
     nombreTarjeta = nombreTarjeta.replace(" ", "");
     nombreTarjeta = nombreTarjeta.toLowerCase();
-    var url = "/images/tarjetasIconos/";
+    var url = "./images/tarjetasIconos/";
     var nombreicon = Imagenes[nombreTarjeta];
     if (nombreicon == null)
         nombreicon = Imagenes["otra"];
