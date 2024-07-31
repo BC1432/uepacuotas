@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', ()=> {
     // Fragmento de HTML que deseas agregar
     const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{height:100%!important;width:100%!important;margin:0 auto!important;border-radius:0px!important}.modal-content-full{height:100%!important;min-height:720px!important;width:100%!important;margin:0px!important;border-radius:0px!important;border:0px!important}#otpNewForm{max-width:500px;background-color:#fff!important;margin:0 auto;padding:9px}#otpNewForm .form-header{gap:5px;text-align:center;font-size:.9em}#otpNewForm .form-header .stepIndicator{position:relative;flex:1;padding-bottom:30px}#otpNewForm .form-header .stepIndicator.active{font-weight:600}#otpNewForm .form-header .stepIndicator.finish{font-weight:600;color:#5f0f78}#otpNewForm .form-header .stepIndicator::before{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);z-index:9;width:20px;height:20px;background-color:#f4d0ff;border-radius:50%;border:3px solid #fcf3ff}#otpNewForm .form-header .stepIndicator.active::before{background-color:#d8b5e2;border:3px solid #f4d0ff}#otpNewForm .form-header .stepIndicator.finish::before{background-color:#5f0f78;border:3px solid #d8b5e2}#otpNewForm .form-header .stepIndicator::after{content:"";position:absolute;left:50%;bottom:8px;width:100%;height:3px;background-color:#f3f3f3}#otpNewForm .form-header .stepIndicator.active::after{background-color:#d8b5e2}#otpNewForm .form-header .stepIndicator.finish::after{background-color:#5f0f78}#otpNewForm .form-header .stepIndicator:last-child:after{display:none}#otpNewForm input{padding:12px 9px;width:100%;font-size:1em;border:1px solid #e3e3e3;border-radius:5px}#otpNewForm input:focus{border:1px solid #5f0f78;outline:0}#otpNewForm input.invalid{border:1px solid #ffaba5}#otpNewForm .step{display:none}#otpNewForm .form-footer{overflow:auto;gap:20px}#otpNewForm .form-footer button:hover{opacity:.8}#otpNewForm .form-footer #prevBtn{background-color:#fff;color:#5f0f78}</style> 
     
@@ -37,7 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
         </div>
-    </div>  `;
+    </div>  
+    
+    
+    `;
 
     // Insertar el fragmento después de <body>
     document.body.insertAdjacentHTML('afterbegin', htmlFragment);
@@ -55,48 +58,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Función para mostrar el modal de la cámara
-    const takePhotoButton = document.getElementById('takePhoto');
-    const video = document.getElementById('video');
-    const canvas = document.getElementById('canvas');
-    const photosContainer = document.getElementById('photos');
-    let stream;
-
-    const startCamera = async () => {
-        try {
-            stream = await navigator.mediaDevices.getUserMedia({ video: true });
-            video.srcObject = stream;
-        } catch (error) {
-            console.error("Error accessing the camera: ", error);
-        }
-    };
-
-    const stopCamera = () => {
-        if (stream) {
-            stream.getTracks().forEach(track => track.stop());
-        }
-    };
-
-    const takePhoto = () => {
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
-        canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
-        const img = document.createElement('img');
-        img.src = canvas.toDataURL('image/png');
-        img.className = 'img-fluid my-2 rounded-3';
-        photosContainer.appendChild(img);
-    };
-
-    const cameraModalElement = document.getElementById('cameraModal');
-    if (cameraModalElement) {
-        cameraModalElement.addEventListener('shown.bs.modal', startCamera);
-        cameraModalElement.addEventListener('hidden.bs.modal', stopCamera);
-    }
-    if (takePhotoButton) {
-        takePhotoButton.addEventListener('click', takePhoto);
-    }
+   
 });
+
+
+
 
 // Funciones para manejar los pasos del formulario
 let currentTab = 0; // Current tab is set to be the first tab (0)
