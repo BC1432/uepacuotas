@@ -204,6 +204,74 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
         </div>
         </div>
     </div>
+
+    <!-- Modal LOW SCORE -->
+    <div class="modal modal-blur fade" id="modalOptLowScore" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalOptLowScoreLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pt-0">
+                <div class="text-center p-2">
+                    
+                    <img class="py-3" src="./images/uepacuotas.svg" style="max-width:92px;">
+
+                    <p class="text-primary h4 my-3 px-3">
+                        LOW SCORE
+                    </p>
+                    <p>Amelia, al aplicar a Uepa Cuotas, reservarás tus boletas para Morat pagando hoy únicamente
+                    la primera cuota.</p>
+                    <p>Según el plan que preparemos para ti, podrás dividir esta compra en hasta 4 cuotas de RD$1,026.3</p>
+                </div>
+                <hr/>
+                <div class="w-100 mb-2">
+                    <p>Tu código de aplicación es: XXXX</p>
+                </div>
+
+            </div>
+            <div class="modal-footer"> 
+                <div class="text-center w-100">
+                    <button type="button" class="btn btn-primary btn-lg px-5 rounded-5">Descargar</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>  
+
+    <!-- Modal NO OFFER -->
+    <div class="modal modal-blur fade" id="modalOptNoOffer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalOptNoOfferLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pt-0">
+                <div class="text-center p-2">
+                    
+                    <img class="py-3" src="./images/uepacuotas.svg" style="max-width:92px;">
+
+                    <p class="text-danger h4 my-3 px-3">
+                        NO OFFER
+                    </p>
+                    <p>Amelia, al aplicar a Uepa Cuotas, reservarás tus boletas para Morat pagando hoy únicamente
+                    la primera cuota.</p>
+                    <p>Según el plan que preparemos para ti, podrás dividir esta compra en hasta 4 cuotas de RD$1,026.3</p>
+                </div>
+                <hr/>
+                <div class="w-100 mb-2">
+                    <p>Tu código de aplicación es: XXXX</p>
+                </div>
+
+            </div>
+            <div class="modal-footer"> 
+                <div class="text-center w-100">
+                    <button type="button" class="btn btn-primary btn-lg px-5 rounded-5">Descargar</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>  
     `;
 
     // Insertar el fragmento después de <body>
