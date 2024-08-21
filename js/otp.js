@@ -215,17 +215,13 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
             <div class="modal-body pt-0">
                 <div class="text-center p-2">
                     
-                    <img class="py-3" src="./images/uepacuotas.svg" style="max-width:92px;">
+                    <img class="py-3 mb-3" src="./images/uepacuotas.svg" style="max-width:92px;">
 
-                    <p class="text-primary h4 my-3 px-3">
-                        LOW SCORE
-                    </p>
-                    <p>Amelia, al aplicar a Uepa Cuotas, reservarás tus boletas para Morat pagando hoy únicamente
-                    la primera cuota.</p>
-                    <p>Según el plan que preparemos para ti, podrás dividir esta compra en hasta 4 cuotas de RD$1,026.3</p>
+                    <p>Amelia, unos pasos más y estaremos listos. Recuerda que tus boletas están reservadas hasta completar todo el proceso.</p>
+                    <p class="small">Debes descargar nuestra App Validapp y seguir los pasos que te indicaremos.</p>
                 </div>
                 <hr/>
-                <div class="w-100 mb-2">
+                <div class="w-100 mb-2 text-center">
                     <p>Tu código de aplicación es: XXXX</p>
                 </div>
 
@@ -249,24 +245,18 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
             <div class="modal-body pt-0">
                 <div class="text-center p-2">
                     
-                    <img class="py-3" src="./images/uepacuotas.svg" style="max-width:92px;">
+                    <img class="py-3 mb-3" src="./images/uepacuotas.svg" style="max-width:92px;">
 
-                    <p class="text-danger h4 my-3 px-3">
-                        NO OFFER
-                    </p>
-                    <p>Amelia, al aplicar a Uepa Cuotas, reservarás tus boletas para Morat pagando hoy únicamente
-                    la primera cuota.</p>
-                    <p>Según el plan que preparemos para ti, podrás dividir esta compra en hasta 4 cuotas de RD$1,026.3</p>
+                  
+                    <p>Amelia, en esta ocasión no tenemos un plan de pagos disponible que se ajuste a tus necesidades.</p>
+                    <p>De todas formas aún tienes la oportunidad de pagar las boletas que seleccionaste.</p>
                 </div>
-                <hr/>
-                <div class="w-100 mb-2">
-                    <p>Tu código de aplicación es: XXXX</p>
-                </div>
+        
 
             </div>
             <div class="modal-footer"> 
                 <div class="text-center w-100">
-                    <button type="button" class="btn btn-primary btn-lg px-5 rounded-5">Descargar</button>
+                    <button type="button" class="btn btn-primary btn-lg px-5 rounded-5">Reservar mis boletas</button>
                 </div>
             </div>
         </div>
