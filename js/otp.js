@@ -42,7 +42,17 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body pt-0">
-                <div class="text-center p-2">
+
+                <!-- Desktop -->
+                <div class="text-center p-2 d-none d-md-block">
+                        <img class="py-3" src="./images/uepacuotas.svg" style="max-width:92px;">
+                        <p class="text-primary my-3 px-3">Ahora validaremos algunos datos para preparar el plan que más te acomode. Para continuar escanea este código QR con la cámara de tu celular.</p>
+
+                        <img src="./images/qr.png" style="max-width: 200px;">
+                </div>
+
+                <!-- Mobile -->
+                <div class="text-center p-2 d-block d-md-none">
                     
                     <img class="py-3" src="./images/uepacuotas.svg" style="max-width:92px;">
 
@@ -52,9 +62,10 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
                     <p>Amelia, al aplicar a Uepa Cuotas, reservarás tus boletas para Morat pagando hoy únicamente
                     la primera cuota.</p>
                     <p>Según el plan que preparemos para ti, podrás dividir esta compra en hasta 4 cuotas de RD$1,026.3</p>
+                     <hr/>
                 </div>
-                <hr/>
-                <div class="w-100 mb-2">
+               
+                <div class="w-100 mb-2 d-block d-md-none">
                     <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckNEWForm">
                         <label class="form-check-label" for="flexSwitchCheckNEWForm">Aceptar políticas de privacidad. <a href="#" class="small">[Ver más...]</a></label>
@@ -62,7 +73,7 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
                 </div>
 
             </div>
-            <div class="modal-footer"> 
+            <div class="modal-footer  d-block d-md-none"> 
                 <div class="text-center w-100">
                     <button type="button" class="btn btn-primary btn-lg px-5 rounded-5 disabled" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalNewForm">Comenzar</button>
                 </div>
