@@ -45,8 +45,8 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
 
                 <!-- Desktop -->
                 <div class="text-center p-2 d-none d-md-block">
-                        <img class="py-3" src="./images/uepacuotas.svg" style="max-width:92px;">
-                        <p class="text-primary my-3 px-3">Ahora validaremos algunos datos para preparar el plan que más te acomode. Para continuar escanea este código QR con la cámara de tu celular.</p>
+                        <img class="pb-3" src="./images/uepacuotas.svg" style="max-width:92px;">
+                        <p class="text-primary mb-3 px-3"><b>Valida tus datos y obtén el mejor plan para ti.</b> <br/>Escanea este código QR con la cámara de tu celular para continuar.</p>
 
                         <img src="./images/qr.png" style="max-width: 200px;">
                 </div>
