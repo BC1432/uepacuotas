@@ -1,0 +1,353 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+    <title>
+        Realizar Pago | Uepa Pay
+    </title>
+
+    <link rel="manifest" href="./manifest.json?ver=0.0.9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Uepa Pay">
+    <meta name="apple-mobile-web-app-title" content="Uepa Pay">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="msapplication-navbutton-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="boleteria, ticket, uepatickets, uepaticket, tickets, boletas, entradas, uepa, santiago, lidom, newspaper, periodicos, santo domingo, republica dominicana," name="keywords">
+    <meta content="Uepa Pay" name="abstract"><meta content="global" name="distribution">
+    <meta content="Copyright© UepaPay.com, Todos los derechos reservados. 2018" name="copyright">
+    <meta content="UepaTickets" name="author"><meta content="index,follow" name="robots">
+    <meta content="index,follow" name="googlebot">
+
+    <!-- Google -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap" rel="stylesheet">
+    
+    <!-- Fonts icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta content="Pagos en Línea" name="description">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta property="og:title" content="Uepa Pay">
+    <meta property="og:site_name" content="Uepa Pay">
+    <meta property="og:description" content="Pagos en Línea">
+    <meta property="og:image" content="./images/1200x630.png">
+    <meta property="og:url" content="https://uepapay.com/">
+
+    <!-- Facebook App -->
+    <meta property="fb:app_id" content="1142952769075359">
+    <!-- Angel Rivas -->
+    <meta property="fb:admins" content="707892288">
+    <!-- Fanpage -->
+    <meta property="fb:admins" content="21003923568">
+    <link href="./css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/512.png">
+    <link rel="shortcut icon" href="./images/512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/256.png">
+    <link rel="icon" sizes="192x192" href="./images/512.png">
+
+  
+    <link rel="stylesheet" href="./css/5.3.2/bootstrap.min.css?ver=5.3.2">
+    <link rel="stylesheet" href="./css/5.3.2/jquery-ui.min.css?ver=3.0">
+
+    <style>
+            /***** Custom by Angel Rivas ****/
+            :root {
+                --bg-pink-light: #F3E0FC !important;
+                --bg-orange-light: #feeae4 !important;
+                --bg-purple-light: #decee3 !important;
+                --bg-gray-light: #e5e8ea !important;
+            }
+
+            h5, .h5 {
+                font-size: 1.09rem;
+            }
+
+            html {
+                background: var(--bg-orange-light) !important;
+            }
+
+            body {
+                background: var(--bg-orange-light) !important;
+            }
+
+            form {
+                background: var(--bg-orange-light) !important;
+            }
+
+            .blur {
+                -webkit-backdrop-filter: blur(2px);
+                backdrop-filter: blur(2px);
+            }
+
+            .ajs-modal {
+                -webkit-backdrop-filter: blur(2px);
+                backdrop-filter: blur(2px);
+            }
+
+            #lbVolver {
+                margin-top: 9px;
+            }
+
+            .rounded-xxl {
+                border-radius: 1rem !important;
+            }
+
+            svg.btn-share {
+                width: 50px;
+                height: 50px;
+            }
+
+            .dropdown-toggle::after {
+                display: none;
+            }
+
+            .btn-success {
+                color: #fff !important;
+                background-color: #28a745;
+                border-color: #28a745;
+            }
+
+            .red {
+                color: #ee522c;
+                fill: #ee522c;
+            }
+
+            .gold {
+                color: #c4802e;
+                fill: #c4802e;
+            }
+
+            .yellow {
+                color: #fee66f;
+                fill: #fee66f;
+            }
+
+            .shadow-success {
+                box-shadow: 0 .5rem 1rem rgba(40,167,69,.25) !important;
+            }
+
+            .shadow-warning {
+                box-shadow: 0 .5rem 1rem rgba(254,193,6,.25) !important;
+            }
+
+            .cuotas-primary {
+                color: #20003d
+            }
+
+            .btn-cuotas {
+                color: #eee;
+                background-color: #5f0f78;
+                border-color: #5f0f78 !important;
+                transition: .2s
+            }
+
+            .btn-cuotas:hover {
+                color: #fff;
+                background-color: #000;
+                border-color: #000 !important;
+                transition: .2s
+            }
+
+            .btn-cuotas:focus {
+                color: #fff;
+                background-color: #000;
+                border-color: #000 !important;
+                transition: .2s
+            }
+
+            .material-switch > input[type="checkbox"]:checked + label::after {
+                background: inherit;
+                left: 20px;
+                background: #198754 !important;
+            }
+
+    </style>
+
+
+
+    <link href="css/angel.css" rel="stylesheet">
+    <link href="css/5.3.2/bootstrap.min.css" rel="stylesheet">
+    <link href="css/5.3.2/jquery-ui.min.css" rel="stylesheet">
+
+    
+
+    <script type="text/javascript" src="./js/5.3.2/jquery-3.7.1.min.js?ver=1.0.0"></script>
+    <script type="text/javascript" src="./js/5.3.2/jquery-ui.min.js?ver=1.13.2"></script>
+
+
+</head>
+<body>
+  
+    <div class="container-fluid">
+                
+
+        <style>
+            nav,#contacto-uepa,.wa-float{display:none !important;}
+            .form-signin {
+                width: 100%;
+                max-width: 414px;
+                padding: 0px;
+                margin:0px auto;
+            }
+        </style>
+        
+        
+        <input name="ctl00$ContentPlaceHolder1$hiddenFieldTokenUEPA" type="hidden" id="ContentPlaceHolder1_hiddenFieldTokenUEPA" value="hPxzD3LH3EiOHzdhFB8WSI5K1E8sh080">
+        
+        <div style="max-width:414px;width: 100%;" class="mx-auto">
+            <div class="list-group my-5 shadow-sm">
+                <div class="list-group-item text-center py-3 border-0">
+                    <div class="my-3">
+                        <img src="/images/Uepa_Pay.svg" style="width:160px;" class="mb-3">
+                        <h4 class="text-center text-primary">Sistema de pagos en línea</h4>
+                    </div>     
+                    
+                </div>
+                <div class="list-group-item border-0">
+           
+                    <div onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ContentPlaceHolder1_btnLogin')">
+        
+    
+                        <div class="input-group mb-3">
+                            <div class="input-group-text bg-white" id="txtUsuario"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path opacity="0" d="M12 16c-2.69 0-5.77 1.28-6 2h12c-.2-.71-3.3-2-6-2z"></path><circle opacity="0" cx="12" cy="8" r="2"></circle><path fill="#555" d="M12 14c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2 2.7 0 5.8 1.29 6 2H6zm6-6c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"></path></svg></div>
+                            <input name="ctl00$ContentPlaceHolder1$txtUsuario" type="text" id="ContentPlaceHolder1_txtUsuario" title="Usuario" placeholder="Correo" class="form-control rounded-btn">
+                        </div>
+    
+                        <div class="input-group mb-3">
+                            <div class="input-group-text bg-white" id="txtPassword"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none"><path d="M0 0h24v24H0V0z"></path><path opacity=".87" d="M0 0h24v24H0V0z"></path></g><path opacity="0" d="M6 20h12V10H6v10zm6-7c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"></path><path fill="#555" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></svg></div>
+                            <input name="ctl00$ContentPlaceHolder1$txtPassword" type="password" id="ContentPlaceHolder1_txtPassword" autocomplete="off" title="Contraseña" placeholder="Contraseña" class="form-control rounded-btn">
+                        </div>
+    
+                        <div class="form-group mb-3">
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$btnLogin" value="Iniciar sesión" id="ContentPlaceHolder1_btnLogin" class="btn btn-warning w-100 btn-lg">
+    
+                        </div>
+    
+    
+                        <div id="DivMensaje"></div>
+                        
+        
+    
+                        <div class="row">
+                        
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="btn btn-light btn-sm mb-3" tabindex="11" href="/" title="Salir">Volver</a>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-8 text-right">
+                                    <a class="btn text-muted btn-sm float-end mb-3" href="/ForgotPassword.aspx" title="¿Olvido su contraseña?">¿Olvidó contraseña?</a>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <a class="btn btn-light w-100 mb-2" href="#" data-bs-toggle="modal" data-bs-target="#comenzarModal">Regístrate</a>
+                                </div>
+                        </div>
+                        <span id="ajaxGif"></span>
+                    
+    </div>
+          
+                </div>
+            </div>
+        </div>
+        
+           <!-- Modal Comenzar v2 -->
+        <div class="modal modal-blur fade bd-example-modal-lg" id="comenzarModal" tabindex="-1" role="dialog" aria-labelledby="comenzarModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg000 modal-dialog-centered" role="document">
+                <div class="modal-content border-0 rounded-xxl">
+                    <!--<div class="modal-header text-center d-none">
+                        <h4 class="modal-title text-center" id="comenzarModalLabel">Crear tu cuenta de manera segura <br/>y totalmente gratis</h4>
+                        <button type="button" class="close d-none" data-bs-dismiss="modal" aria-label="Close">
+                            
+                        </button>
+                    </div>-->
+                    <div class="modal-body bg-white border-0 rounded-5">
+    
+                        <h4 class="text-center my-3 mx-3 text-primary" id="titleCreateAccount">Crear tu cuenta de manera segura <br>y totalmente gratis</h4>
+    
+    
+                        <div class="my-5 mx-5">
+                            <div class="form-check">
+                                <input class="form-check-input" onclick="cP()" type="radio" name="options" id="cuentaPersonal" autocomplete="off">
+                                <label class="form-check-label form-check-label h5" for="cuentaPersonal">
+                                    <b class="text-primary">Cuenta Personal</b><br><small class="font-weight-bold">Persona Física</small><br>
+                                    <small>Envía y recibe pagos de inmediato.</small>
+                                </label>
+                            </div>
+                            <br>
+                            <div class="form-check">
+                                <input class="form-check-input" onclick="cE()" type="radio" name="options" id="cuentaEmpresarial" autocomplete="off">
+                                <label class="form-check-label form-check-label h5" for="cuentaEmpresarial">
+                                    <b class="text-primary">Cuenta Empresarial</b><br><small class="font-weight-bold">Persona Jurídica</small><br><small>Vende y recibe pagos de inmediato.</small>
+                                </label>
+                            </div>
+                                <br>
+                            <div class="text-center my-3 mx-5">
+    
+                                <a id="btnCuentaPersonal" href="/CuentaPersonal.aspx" class="btn btn-primary w-100 rounded-btn d-none">  Siguiente  </a>
+    
+                                <a id="btnCuentaEmpresarial" href="/CuentaEmpresarial.aspx" class="btn btn-dark  w-100 rounded-btn d-none">  Siguiente  </a>
+                            </div>
+                            <script>
+                                function cP() {
+                                    var elementP = document.getElementById("btnCuentaPersonal");
+                                    elementP.classList.remove("d-none");
+                                    var elementE = document.getElementById("btnCuentaEmpresarial");
+                                    elementE.classList.add("d-none");
+                                }
+                                function cE() {
+                                    var elementE = document.getElementById("btnCuentaEmpresarial");
+                                    elementE.classList.remove("d-none");
+                                    var elementP = document.getElementById("btnCuentaPersonal");
+                                    elementP.classList.add("d-none");
+                                }
+                            </script>
+    
+                        </div>
+    
+    
+                            <div class="d-none row justify-content-center">
+                                <div class="col-lg-6 col-12 mb-3">
+                                    <div class="card border-primary">
+                                        <div class="card-header py-3 border-0 bg-pink-light">
+                                            <span class="h5">Cuenta</span>
+                                            <div class="h2 text-primary"><span class=""> Personal</span></div><span class="h6 text-muted">Persona Física</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Envía y recibe pagos de inmediato.</p>
+                                            <a href="/CuentaPersonal.aspx" class="btn btn-primary w-100 btn-lg shadow">Seleccionar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="card border-warning">
+                                        <div class="card-header py-3 border-0 bg-orange-light">
+                                            <span class="h5">Cuenta</span>
+                                            <div class="h2"><span class=""> Empresarial</span></div><span class="h6 text-muted">Persona Jurídica</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Vende y recibe pagos de inmediato.</p>
+                                            <a href="/CuentaEmpresarial.aspx" class="btn btn-warning w-100 btn-lg shadow">Seleccionar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+        
+    
+    
+                </div>
+    <footer class="fixed-bottom mt-3 text-center z-n1">
+        <img src="./images/powered_by_uepa.svg" style="width:60px;"><br>
+        <span class="btn text-muted" style="font-size: 9px;" data-bs-toggle="modal" data-bs-target="#aceptarTCModal">© 2024 <b>Powered by Uepa</b>. All rights reserved.</span>
+    </footer>
+
+    <script src="js/5.3.2/bootstrap.js"></script>
+    <script src="js/5.3.2/popper.min.js"></script>
+
+</body>
+</html>
