@@ -817,17 +817,19 @@
 
                         <!-- pasoUnoCuotas-->
                         <div class="tab-pane fade show active" id="pasoUnoCuotas" role="tabpanel" aria-labelledby="deseoAplicar" tabindex="0">
-                            <p class="text-center text-primary">Divide tu pago en <span id="cantidadCoutas"></span>cuotas que serán cargadas a tu tarjeta de manera automática.</p>
-                            <!--<p>El subtotal ya incluye cargo por servicio de boletería.</p>-->
+                            <div class="text-center text-primary mb-3"><p class="mb-1">Divide tu pago en <span id="cantidadCoutas"></span>cuotas que serán cargadas a tu tarjeta de manera automática.</p> <small class="small">El subtotal ya incluye cargo por servicio de boletería.</small></div>
+                            
+                           
+
                             <div class="table-responsive">
                                 <table id="uepaCuotaTable" class="table table-sm text-primary text-center">
                                     <thead>
                                         <tr>
-                                            <th>CUOTA #</th>
-                                            <th>FECHA PAGO</th>
-                                            <th>SUB TOTAL</th>
-                                            <th>CARGO CUOTAS</th>
-                                            <th>TOTAL</th>
+                                            <th>Cuota</th>
+                                            <th>Fecha</th>
+                                            <th>Subtotal</th>
+                                            <th>Comisión</th>
+                                            <th>Total</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -841,7 +843,6 @@
                                         <div class="h4 mb-0">
                                             <strong>TOTAL: </strong>RD<strong id="montoPagar"></strong>
                                         </div>
-                                        <small>El subtotal ya incluye cargo por servicio de boletería.</small>
                                     </div>
                                 </div>
 
