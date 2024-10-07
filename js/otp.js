@@ -300,6 +300,35 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
         </div>
         </div>
     </div>  
+
+    <!-- Modal LISTA -->
+    <div class="modal modal-blur fade" id="modalListo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalListoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pt-0">
+                <div class="text-center p-2">
+                    
+                    <img class="py-3 mb-3" src="./images/uepacuotas.svg" style="max-width:92px;">
+
+                  
+                    <p><b>¡Listo, validación completada!</b></p>
+                    <p>Por favor presiona el botón para continuar con el proceso.</p>
+                </div>
+        
+
+            </div>
+            <div class="modal-footer d-none"> 
+                <div class="text-center w-100">
+                    <button type="button" class="btn btn-primary btn-lg px-5 my-3 rounded-5">Continuar</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>  
+
     `;
 
 
