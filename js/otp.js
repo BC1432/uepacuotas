@@ -212,7 +212,7 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
                     
                         <div class="mb-3 text-center"> 
                             
-                            <img class="py-3" src="./images/camera_front.svg" style="max-width: 128px;">
+                            <img class="py-3" src="./images/smartphone_camera.svg" style="max-width:96px;">
 
                             <p class="h4 text-primary my-3 px-3">Por tu seguridad, y para que tu plan de pagos sea más personalizado, validaremos rápidamente tu identidad.</p>
                             <p style="font-size: 12px;" class="small text-secondary mb-3">*Asegúrate de estar en un lugar con buena iluminación*</p>
