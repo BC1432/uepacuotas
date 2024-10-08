@@ -42,6 +42,7 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header border-0">
+                <small class="text-secondary ms-1">Tiempo restante: <strong class="timer">0</strong></small>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body pt-0">
@@ -90,6 +91,7 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
         <div class="modal-dialog modal-dialog-full modal-dialog-centered">
         <div class="modal-content modal-content-full">
             <div class="modal-header border-0 d-none0">
+                <small class="text-secondary ms-1">Tiempo restante: <strong class="timer">0</strong></small>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body pt-0">
@@ -234,6 +236,7 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header border-0">
+                <small class="text-secondary ms-1">Tiempo restante: <strong class="timer">0</strong></small>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body pt-0">
@@ -278,6 +281,7 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header border-0">
+                <small class="text-secondary ms-1">Tiempo restante: <strong class="timer">0</strong></small>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body pt-0">
@@ -306,6 +310,7 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header border-0">
+                <small class="text-secondary ms-1">Tiempo restante: <strong class="timer">0</strong></small>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body pt-0">
