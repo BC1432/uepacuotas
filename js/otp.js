@@ -334,8 +334,6 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
 
     `;
 
-
-
 // OPT validar con 1234
 function validateOTPAndProceed() {
   // Obtener los valores de los inputs
