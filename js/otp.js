@@ -309,15 +309,13 @@ const htmlFragment = `<style>img.card-icon{max-width:48px}.modal-dialog-full{hei
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body pt-0">
-                <div class="text-center p-2">
+                <div class="text-center text-primary p-2">
                     
-                    <img class="py-3 mb-3" src="./images/uepacuotas.svg" style="max-width:92px;">
+                    <!--<img class="py-3 mb-3" src="./images/uepacuotas.svg" style="max-width:92px;">-->
 
-                  
                     <p><b>¡Listo, validación completada!</b></p>
                     <p>Por favor presiona el botón para continuar con el proceso.</p>
                 </div>
-        
 
             </div>
             <div class="modal-footer d-none"> 
