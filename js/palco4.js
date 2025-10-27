@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var bannerDiv = document.createElement('div');
             bannerDiv.className = 'my-3 w-100';
             bannerDiv.id = 'banner_uepacuotas';
-            bannerDiv.innerHTML = '<a target="_blank" href="https://www.uepacuotas.com/"><img src="https://uepatickets.com/backoffice/empresa/3/banner_uepacuotas.com___1130x90px.png" alt="Uepa Cuotas" class="shadow border-3"></a>';
+            bannerDiv.innerHTML = '<a target="_blank" href="https://www.uepacuotas.com/?v=3.4"><img src="https://uepatickets.com/backoffice/empresa/3/banner_uepacuotas.com___1130x90px.png" alt="Uepa Cuotas" class="shadow border-3"></a>';
             var headerDesktop = document.getElementById('header-desktop');
             if (headerDesktop) {
                 headerDesktop.parentNode.insertBefore(bannerDiv, headerDesktop.nextSibling);
