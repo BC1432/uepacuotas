@@ -1,4 +1,6 @@
-// UEPA CUOTAS 3.4 - Palco4 
+/* UEPA CUOTAS 3.4 - Palco4 */
+// Instalar en Palco4 - Mostrar banner y cuotas dinámicas según evento y fecha
+// Requiere variable global EventosBuscador y arrayVentasEnCarrito
 document.addEventListener('DOMContentLoaded', function() {
     
     let idEventoBuscado;
@@ -134,7 +136,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
 
-});
+}); /* END UEPA CUOTAS 3.4 */
+
 
 
 /* PROMO CODES */
