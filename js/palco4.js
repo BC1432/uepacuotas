@@ -135,3 +135,122 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
 });
+
+
+/* PROMO CODES */
+// Instalar en Palco4 - PROMO CODE DINAMICO con IndexedDB y control de frecuencia
+// Esto muestra un mensaje personalizado desde Admin Beta
+(function () {
+    const DB_NAME = 'promoMensajesDB';
+    const STORE_NAME = 'mensajes';
+    const LAST_SYNC_KEY = 'promoMensajesLastSync';
+    const SYNC_INTERVAL_MINUTES = 3;
+    const API_URL = "https://script.google.com/macros/s/AKfycbyEXC2_t9KwvuQO1H4zcUA2_5U7PWtkdTotmO9lUt2wJ9bqMDCv2sy95sePQRT5JE8w/exec?view=dashboard";
+  
+    function openDB() {
+      return new Promise((resolve, reject) => {
+        const request = indexedDB.open(DB_NAME, 1);
+        request.onerror = () => reject("❌ Error abriendo IndexedDB");
+        request.onsuccess = () => resolve(request.result);
+        request.onupgradeneeded = (e) => {
+          const db = e.target.result;
+          if (!db.objectStoreNames.contains(STORE_NAME)) {
+            db.createObjectStore(STORE_NAME, { keyPath: "eventIds" });
+          }
+        };
+      });
+    }
+  
+    function guardarMensajes(db, mensajes) {
+      return new Promise((resolve, reject) => {
+        const tx = db.transaction(STORE_NAME, 'readwrite');
+        const store = tx.objectStore(STORE_NAME);
+        mensajes.forEach(item => {
+          store.put({ eventIds: String(item.eventIds).trim(), mensaje: item.mensaje });
+        });
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => reject("❌ Error al guardar en IndexedDB");
+      });
+    }
+  
+    function obtenerMensaje(db, eventId) {
+      return new Promise((resolve) => {
+        const tx = db.transaction(STORE_NAME, 'readonly');
+        const store = tx.objectStore(STORE_NAME);
+        const req = store.get(String(eventId).trim());
+        req.onsuccess = () => resolve(req.result?.mensaje || null);
+        req.onerror = () => resolve(null);
+      });
+    }
+  
+    async function sincronizarMensajesSiEsNecesario(db) {
+      const lastSync = localStorage.getItem(LAST_SYNC_KEY);
+      const now = Date.now();
+      if (lastSync && now - parseInt(lastSync) < SYNC_INTERVAL_MINUTES * 60 * 1000) return;
+  
+      try {
+        const res = await fetch(API_URL);
+        const data = await res.json();
+        await guardarMensajes(db, data);
+        localStorage.setItem(LAST_SYNC_KEY, now.toString());
+      } catch (err) {
+        console.warn("❌ Error sincronizando mensajes:", err);
+      }
+    }
+  
+    function mostrarMensajeEnDOM(mensaje) {
+      if (!mensaje) return;
+  
+      let promoLink = document.getElementById("link-modal-loyalty");
+      if (promoLink) promoLink.innerHTML = mensaje;
+  
+      let link = document.getElementById("link-modal-loyalty_no_zones") ||
+                 document.getElementById("link-modal-loyalty") ||
+                 document.getElementById("link-modal-loyalty-content") ||
+                 document.getElementById("link-modal-loyalty-content_ticket-type");
+  
+      if (link) {
+        let linkElement = link.tagName === "A" ? link : link.querySelector("a");
+        if (linkElement) linkElement.innerHTML = mensaje;
+      }
+
+      // >>> AÑADIDO AQUÍ <<<
+      try {
+        var ticketDiv = document.getElementById("link-modal-loyalty-content_ticket-type");
+        if (ticketDiv) {
+          var anchor = ticketDiv.querySelector("a");
+          if (anchor) {
+            var tmp = document.createElement("div");
+            tmp.innerHTML = mensaje || "";
+            var plain = (tmp.textContent || tmp.innerText || "").trim();
+            if (plain) {
+              anchor.textContent = plain;
+              anchor.title = plain;
+              anchor.setAttribute("aria-label", plain);
+              anchor.dataset._uepaAmexSet = "1";
+            }
+          }
+        }
+      } catch (ex) {
+        console.warn("Amex override error:", ex);
+      }
+      // <<< FIN AÑADIDO <<<
+  
+      let inputField = document.getElementById("dNumTarjetaFidelizacionBuscar");
+      if (inputField) inputField.setAttribute("placeholder", "Ingrese aquí el código");
+    }
+  
+    document.addEventListener("DOMContentLoaded", () => {
+      const interval = setInterval(async () => {
+        if (typeof dataLayerP4 === "undefined" || !dataLayerP4.eventId) return;
+  
+        const db = await openDB();
+        await sincronizarMensajesSiEsNecesario(db);
+  
+        const mensaje = await obtenerMensaje(db, dataLayerP4.eventId);
+        mostrarMensajeEnDOM(mensaje);
+        clearInterval(interval);
+      }, 500);
+    });
+  })();
+  // END PROMO CODE DINAMICO
