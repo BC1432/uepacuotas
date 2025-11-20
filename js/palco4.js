@@ -149,9 +149,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const LAST_SYNC_KEY = 'promoMensajesLastSync';
     const SYNC_INTERVAL_MINUTES = 3;
     // Development version (solo ID+MSJ)
-    const API_URL = "https://script.google.com/macros/s/AKfycbzk4GKEcElhmdEcP1sARsYXWoBlMm-KRunnBqfRu5ripWj24idizsey-0NLkZgZB_tL/exec?view=dashboard";
+    //const API_URL = "https://script.google.com/macros/s/AKfycbzk4GKEcElhmdEcP1sARsYXWoBlMm-KRunnBqfRu5ripWj24idizsey-0NLkZgZB_tL/exec?view=dashboard";
     // Stable version 1
-    //const API_URL = "https://script.google.com/macros/s/AKfycbyEXC2_t9KwvuQO1H4zcUA2_5U7PWtkdTotmO9lUt2wJ9bqMDCv2sy95sePQRT5JE8w/exec?view=dashboard";
+    const API_URL = "https://script.google.com/macros/s/AKfycbyEXC2_t9KwvuQO1H4zcUA2_5U7PWtkdTotmO9lUt2wJ9bqMDCv2sy95sePQRT5JE8w/exec?view=dashboard";
   
     function openDB() {
       return new Promise((resolve, reject) => {
